@@ -1,0 +1,641 @@
+{
+  "info": {
+    "name": "BookStore Mock",
+    "description": "BookStore-only endpoints, used to build a Postman Mock Server. Excludes Account module by design since mock servers should not simulate real authentication logic.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get All Books",
+      "item": [
+        {
+          "name": "Get All Books - Positive",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status code is 200', () => pm.response.to.have.status(200));",
+                  "pm.test('Response has books array', () => {",
+                  "    const res = pm.response.json();",
+                  "    pm.expect(res.books).to.be.an('array');",
+                  "});"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              { "key": "Content-Type", "value": "{{contentType}}" }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/BookStore/v1/Books",
+              "host": ["{{baseUrl}}"],
+              "path": ["BookStore", "v1", "Books"]
+            }
+          },
+          "response": [
+            {
+              "name": "200 OK - Books List",
+              "originalRequest": {
+                "method": "GET",
+                "header": [{ "key": "Content-Type", "value": "{{contentType}}" }],
+                "url": {
+                  "raw": "{{baseUrl}}/BookStore/v1/Books",
+                  "host": ["{{baseUrl}}"],
+                  "path": ["BookStore", "v1", "Books"]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [{ "key": "Content-Type", "value": "application/json" }],
+              "body": "{\n  \"books\": [\n    {\n      \"isbn\": \"9781449325862\",\n      \"title\": \"Git Pocket Guide\",\n      \"subTitle\": \"A Working Introduction\",\n      \"author\": \"Richard E. Silverman\",\n      \"publish_date\": \"2020-06-04T08:48:39.000Z\",\n      \"publisher\": \"O'Reilly Media\",\n      \"pages\": 234,\n      \"description\": \"An introductory guide to Git\",\n      \"website\": \"https://www.git-scm.com\"\n    },\n    {\n      \"isbn\": \"9781449331818\",\n      \"title\": \"Learning JavaScript Design Patterns\",\n      \"subTitle\": \"A JavaScript and jQuery Developer's Guide\",\n      \"author\": \"Addy Osmani\",\n      \"publish_date\": \"2020-06-04T08:48:39.000Z\",\n      \"publisher\": \"O'Reilly Media\",\n      \"pages\": 254,\n      \"description\": \"Design patterns in JavaScript\",\n      \"website\": \"https://www.oreilly.com\"\n    }\n  ]\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Add Books to Collection",
+      "item": [
+        {
+          "name": "Add Books - Positive",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status code is 201', () => pm.response.to.have.status(201));"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "{{contentType}}" },
+              { "key": "Authorization", "value": "Bearer {{token}}" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"userId\": \"{{userId}}\",\n  \"collectionOfIsbns\": [\n    { \"isbn\": \"{{isbn1}}\" }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/BookStore/v1/Books",
+              "host": ["{{baseUrl}}"],
+              "path": ["BookStore", "v1", "Books"]
+            }
+          },
+          "response": [
+            {
+              "name": "201 Created",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  { "key": "Content-Type", "value": "{{contentType}}" },
+                  { "key": "Authorization", "value": "Bearer {{token}}" }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"userId\": \"{{userId}}\",\n  \"collectionOfIsbns\": [\n    { \"isbn\": \"{{isbn1}}\" }\n  ]\n}"
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/BookStore/v1/Books",
+                  "host": ["{{baseUrl}}"],
+                  "path": ["BookStore", "v1", "Books"]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": "json",
+              "header": [{ "key": "Content-Type", "value": "application/json" }],
+              "body": "{\n  \"books\": [\n    { \"isbn\": \"9781449325862\" }\n  ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Add Books - Negative (invalid ISBN)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status code is 400', () => pm.response.to.have.status(400));"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "{{contentType}}" },
+              { "key": "Authorization", "value": "Bearer {{token}}" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"userId\": \"{{userId}}\",\n  \"collectionOfIsbns\": [\n    { \"isbn\": \"{{invalidIsbn}}\" }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/BookStore/v1/Books",
+              "host": ["{{baseUrl}}"],
+              "path": ["BookStore", "v1", "Books"]
+            }
+          },
+          "response": [
+            {
+              "name": "400 Bad Request - ISBN not found",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  { "key": "Content-Type", "value": "{{contentType}}" },
+                  { "key": "Authorization", "value": "Bearer {{token}}" }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"userId\": \"{{userId}}\",\n  \"collectionOfIsbns\": [\n    { \"isbn\": \"{{invalidIsbn}}\" }\n  ]\n}"
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/BookStore/v1/Books",
+                  "host": ["{{baseUrl}}"],
+                  "path": ["BookStore", "v1", "Books"]
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "_postman_previewlanguage": "json",
+              "header": [{ "key": "Content-Type", "value": "application/json" }],
+              "body": "{\n  \"code\": \"1205\",\n  \"message\": \"ISBN supplied is not available in Books Collection!\"\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Delete All Books",
+      "item": [
+        {
+          "name": "Delete All Books - Positive",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status code is 204', () => pm.response.to.have.status(204));"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "DELETE",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{token}}" }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/BookStore/v1/Books?UserId={{userId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["BookStore", "v1", "Books"],
+              "query": [{ "key": "UserId", "value": "{{userId}}" }]
+            }
+          },
+          "response": [
+            {
+              "name": "204 No Content",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
+                "url": {
+                  "raw": "{{baseUrl}}/BookStore/v1/Books?UserId={{userId}}",
+                  "host": ["{{baseUrl}}"],
+                  "path": ["BookStore", "v1", "Books"],
+                  "query": [{ "key": "UserId", "value": "{{userId}}" }]
+                }
+              },
+              "status": "No Content",
+              "code": 204,
+              "_postman_previewlanguage": "json",
+              "header": [],
+              "body": ""
+            }
+          ]
+        },
+        {
+          "name": "Delete All Books - Negative (unauthorized)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status code is 401', () => pm.response.to.have.status(401));"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/BookStore/v1/Books?UserId={{userId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["BookStore", "v1", "Books"],
+              "query": [{ "key": "UserId", "value": "{{userId}}" }]
+            }
+          },
+          "response": [
+            {
+              "name": "401 Unauthorized - No token",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/BookStore/v1/Books?UserId={{userId}}",
+                  "host": ["{{baseUrl}}"],
+                  "path": ["BookStore", "v1", "Books"],
+                  "query": [{ "key": "UserId", "value": "{{userId}}" }]
+                }
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "_postman_previewlanguage": "json",
+              "header": [{ "key": "Content-Type", "value": "application/json" }],
+              "body": "{\n  \"code\": \"1207\",\n  \"message\": \"User not authorized!\"\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Get Book by ISBN",
+      "item": [
+        {
+          "name": "Get Book - Positive",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status code is 200', () => pm.response.to.have.status(200));"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/BookStore/v1/Book?ISBN={{isbn1}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["BookStore", "v1", "Book"],
+              "query": [{ "key": "ISBN", "value": "{{isbn1}}" }]
+            }
+          },
+          "response": [
+            {
+              "name": "200 OK - Book found",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/BookStore/v1/Book?ISBN={{isbn1}}",
+                  "host": ["{{baseUrl}}"],
+                  "path": ["BookStore", "v1", "Book"],
+                  "query": [{ "key": "ISBN", "value": "{{isbn1}}" }]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [{ "key": "Content-Type", "value": "application/json" }],
+              "body": "{\n  \"isbn\": \"9781449325862\",\n  \"title\": \"Git Pocket Guide\",\n  \"subTitle\": \"A Working Introduction\",\n  \"author\": \"Richard E. Silverman\",\n  \"publish_date\": \"2020-06-04T08:48:39.000Z\",\n  \"publisher\": \"O'Reilly Media\",\n  \"pages\": 234,\n  \"description\": \"An introductory guide to Git\",\n  \"website\": \"https://www.git-scm.com\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Get Book - Negative (not found)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status code is 400', () => pm.response.to.have.status(400));"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/BookStore/v1/Book?ISBN={{invalidIsbn}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["BookStore", "v1", "Book"],
+              "query": [{ "key": "ISBN", "value": "{{invalidIsbn}}" }]
+            }
+          },
+          "response": [
+            {
+              "name": "400 Bad Request - ISBN not found",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/BookStore/v1/Book?ISBN={{invalidIsbn}}",
+                  "host": ["{{baseUrl}}"],
+                  "path": ["BookStore", "v1", "Book"],
+                  "query": [{ "key": "ISBN", "value": "{{invalidIsbn}}" }]
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "_postman_previewlanguage": "json",
+              "header": [{ "key": "Content-Type", "value": "application/json" }],
+              "body": "{\n  \"code\": \"1205\",\n  \"message\": \"ISBN supplied is not available in the Books Collection!\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Get Book - Boundary (empty ISBN)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status code is 400', () => pm.response.to.have.status(400));"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/BookStore/v1/Book?ISBN=",
+              "host": ["{{baseUrl}}"],
+              "path": ["BookStore", "v1", "Book"],
+              "query": [{ "key": "ISBN", "value": "" }]
+            }
+          },
+          "response": [
+            {
+              "name": "400 Bad Request - Empty ISBN",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/BookStore/v1/Book?ISBN=",
+                  "host": ["{{baseUrl}}"],
+                  "path": ["BookStore", "v1", "Book"],
+                  "query": [{ "key": "ISBN", "value": "" }]
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "_postman_previewlanguage": "json",
+              "header": [{ "key": "Content-Type", "value": "application/json" }],
+              "body": "{\n  \"code\": \"1205\",\n  \"message\": \"ISBN supplied is not available in the Books Collection!\"\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Delete a Book",
+      "item": [
+        {
+          "name": "Delete Book - Positive",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status code is 204', () => pm.response.to.have.status(204));"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "DELETE",
+            "header": [
+              { "key": "Content-Type", "value": "{{contentType}}" },
+              { "key": "Authorization", "value": "Bearer {{token}}" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"isbn\": \"{{isbn1}}\",\n  \"userId\": \"{{userId}}\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/BookStore/v1/Book",
+              "host": ["{{baseUrl}}"],
+              "path": ["BookStore", "v1", "Book"]
+            }
+          },
+          "response": [
+            {
+              "name": "204 No Content",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [
+                  { "key": "Content-Type", "value": "{{contentType}}" },
+                  { "key": "Authorization", "value": "Bearer {{token}}" }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"isbn\": \"{{isbn1}}\",\n  \"userId\": \"{{userId}}\"\n}"
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/BookStore/v1/Book",
+                  "host": ["{{baseUrl}}"],
+                  "path": ["BookStore", "v1", "Book"]
+                }
+              },
+              "status": "No Content",
+              "code": 204,
+              "_postman_previewlanguage": "json",
+              "header": [],
+              "body": ""
+            }
+          ]
+        },
+        {
+          "name": "Delete Book - Negative (ISBN not in collection)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status code is 400', () => pm.response.to.have.status(400));"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "DELETE",
+            "header": [
+              { "key": "Content-Type", "value": "{{contentType}}" },
+              { "key": "Authorization", "value": "Bearer {{token}}" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"isbn\": \"{{invalidIsbn}}\",\n  \"userId\": \"{{userId}}\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/BookStore/v1/Book",
+              "host": ["{{baseUrl}}"],
+              "path": ["BookStore", "v1", "Book"]
+            }
+          },
+          "response": [
+            {
+              "name": "400 Bad Request",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [
+                  { "key": "Content-Type", "value": "{{contentType}}" },
+                  { "key": "Authorization", "value": "Bearer {{token}}" }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"isbn\": \"{{invalidIsbn}}\",\n  \"userId\": \"{{userId}}\"\n}"
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/BookStore/v1/Book",
+                  "host": ["{{baseUrl}}"],
+                  "path": ["BookStore", "v1", "Book"]
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "_postman_previewlanguage": "json",
+              "header": [{ "key": "Content-Type", "value": "application/json" }],
+              "body": "{\n  \"code\": \"1206\",\n  \"message\": \"ISBN supplied is not available in User's Collection!\"\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Replace a Book",
+      "item": [
+        {
+          "name": "Replace Book - Positive",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status code is 200', () => pm.response.to.have.status(200));"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "PUT",
+            "header": [
+              { "key": "Content-Type", "value": "{{contentType}}" },
+              { "key": "Authorization", "value": "Bearer {{token}}" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"userId\": \"{{userId}}\",\n  \"isbn\": \"{{isbn2}}\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/BookStore/v1/Books/{{isbn1}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["BookStore", "v1", "Books", "{{isbn1}}"]
+            }
+          },
+          "response": [
+            {
+              "name": "200 OK - Book replaced",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [
+                  { "key": "Content-Type", "value": "{{contentType}}" },
+                  { "key": "Authorization", "value": "Bearer {{token}}" }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"userId\": \"{{userId}}\",\n  \"isbn\": \"{{isbn2}}\"\n}"
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/BookStore/v1/Books/{{isbn1}}",
+                  "host": ["{{baseUrl}}"],
+                  "path": ["BookStore", "v1", "Books", "{{isbn1}}"]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [{ "key": "Content-Type", "value": "application/json" }],
+              "body": "{\n  \"userId\": \"{{userId}}\",\n  \"username\": \"testuser\",\n  \"books\": [\n    { \"isbn\": \"9781449331818\" }\n  ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Replace Book - Negative (unauthorized)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status code is 401', () => pm.response.to.have.status(401));"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "PUT",
+            "header": [
+              { "key": "Content-Type", "value": "{{contentType}}" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"userId\": \"{{userId}}\",\n  \"isbn\": \"{{isbn2}}\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/BookStore/v1/Books/{{isbn1}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["BookStore", "v1", "Books", "{{isbn1}}"]
+            }
+          },
+          "response": [
+            {
+              "name": "401 Unauthorized",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [{ "key": "Content-Type", "value": "{{contentType}}" }],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"userId\": \"{{userId}}\",\n  \"isbn\": \"{{isbn2}}\"\n}"
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/BookStore/v1/Books/{{isbn1}}",
+                  "host": ["{{baseUrl}}"],
+                  "path": ["BookStore", "v1", "Books", "{{isbn1}}"]
+                }
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "_postman_previewlanguage": "json",
+              "header": [{ "key": "Content-Type", "value": "application/json" }],
+              "body": "{\n  \"code\": \"1207\",\n  \"message\": \"User not authorized!\"\n}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
