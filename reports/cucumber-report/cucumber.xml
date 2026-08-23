@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="78.522" tests="22" skipped="0" failures="0" errors="0">
+<testcase classname="Account - Create User" name="Create a user with valid unique credentials" time="6.602">
+<system-out><![CDATA[
+Given the BookStore API base URL is configured..............................passed
+Given I generate a unique username and a strong password....................passed
+When I send a request to create the user....................................passed
+Then the response status code should be 201.................................passed
+And the response should match the "user-schema.json" schema.................passed
+And the created userId should be saved for later steps......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Account - Create User" name="Create a user with a weak password" time="0.676">
+<system-out><![CDATA[
+Given the BookStore API base URL is configured..............................passed
+Given I generate a unique username..........................................passed
+And I set the password to "123".............................................passed
+When I send a request to create the user....................................passed
+Then the response status code should be 400.................................passed
+And the response should match the "error-schema.json" schema................passed
+]]></system-out>
+</testcase>
+<testcase classname="Account - Create User" name="Create a user with an empty username" time="0.683">
+<system-out><![CDATA[
+Given the BookStore API base URL is configured..............................passed
+Given I set the username to ""..............................................passed
+And I generate a strong password............................................passed
+When I send a request to create the user....................................passed
+Then the response status code should be 400.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Account - Delete User" name="Delete an existing user with a valid token" time="4.799">
+<system-out><![CDATA[
+Given the BookStore API base URL is configured..............................passed
+And a user already exists with a unique username and a strong password......passed
+And I have generated a valid token for that user............................passed
+When I send a request to delete the saved user using the saved token........passed
+Then the response status code should be 204.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Account - Delete User" name="Delete a user without an authorization token" time="3.885">
+<system-out><![CDATA[
+Given the BookStore API base URL is configured..............................passed
+And a user already exists with a unique username and a strong password......passed
+And I have generated a valid token for that user............................passed
+When I send a request to delete the saved user without a token..............passed
+Then the response status code should be 401.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Account - Generate Token" name="Generate a token with valid credentials" time="3.002">
+<system-out><![CDATA[
+Given the BookStore API base URL is configured..............................passed
+And a user already exists with a unique username and a strong password......passed
+When I request a token for the existing user................................passed
+Then the response status code should be 200.................................passed
+And the response should match the "token-schema.json" schema................passed
+And the response status field should be "Success"...........................passed
+And the token should be saved for later steps...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Account - Generate Token" name="Generate a token with an incorrect password" time="2.958">
+<system-out><![CDATA[
+Given the BookStore API base URL is configured..............................passed
+And a user already exists with a unique username and a strong password......passed
+When I request a token using an incorrect password..........................passed
+Then the response status code should be 200.................................passed
+And the response status field should be "Failed"............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Account - Get User" name="Get an existing user's details using a valid token" time="5.291">
+<system-out><![CDATA[
+Given the BookStore API base URL is configured..............................passed
+And a user already exists with a unique username and a strong password......passed
+And I have generated a valid token for that user............................passed
+When I request the user details using the saved userId and token............passed
+Then the response status code should be 200.................................passed
+And the response should match the "user-schema.json" schema.................passed
+]]></system-out>
+</testcase>
+<testcase classname="Account - Get User" name="Get user details without an authorization token" time="4.48">
+<system-out><![CDATA[
+Given the BookStore API base URL is configured..............................passed
+And a user already exists with a unique username and a strong password......passed
+And I have generated a valid token for that user............................passed
+When I request the user details using the saved userId but no token.........passed
+Then the response status code should be 401.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="BookStore - Add Books to User Collection" name="Add a valid ISBN to the user's collection" time="4.8">
+<system-out><![CDATA[
+Given the BookStore API base URL is configured..............................passed
+And a user already exists with a unique username and a strong password......passed
+And I have generated a valid token for that user............................passed
+When I add ISBN "isbn1" to the user's collection using the saved token......passed
+Then the response status code should be 201.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="BookStore - Add Books to User Collection" name="Add an invalid ISBN to the user's collection" time="3.684">
+<system-out><![CDATA[
+Given the BookStore API base URL is configured..............................passed
+And a user already exists with a unique username and a strong password......passed
+And I have generated a valid token for that user............................passed
+When I add ISBN "invalidIsbn" to the user's collection using the saved token.passed
+Then the response status code should be 400.................................passed
+And the response should match the "error-schema.json" schema................passed
+]]></system-out>
+</testcase>
+<testcase classname="BookStore - Add Books to User Collection" name="Add an empty list of ISBNs to the user's collection" time="3.471">
+<system-out><![CDATA[
+Given the BookStore API base URL is configured..............................passed
+And a user already exists with a unique username and a strong password......passed
+And I have generated a valid token for that user............................passed
+When I add an empty list of ISBNs to the user's collection using the saved token.passed
+Then the response status code should be 400.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="BookStore - Delete All Books" name="Delete all books from the user's collection using a valid token" time="5.728">
+<system-out><![CDATA[
+Given the BookStore API base URL is configured..............................passed
+And a user already exists with a unique username and a strong password......passed
+And I have generated a valid token for that user............................passed
+And ISBN "isbn1" has been added to the user's collection....................passed
+When I delete all books from the user's collection using the saved token....passed
+Then the response status code should be 204.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="BookStore - Delete All Books" name="Delete all books without an authorization token" time="5.116">
+<system-out><![CDATA[
+Given the BookStore API base URL is configured..............................passed
+And a user already exists with a unique username and a strong password......passed
+And I have generated a valid token for that user............................passed
+And ISBN "isbn1" has been added to the user's collection....................passed
+When I delete all books from the user's collection without a token..........passed
+Then the response status code should be 401.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="BookStore - Delete a Book" name="Delete a book that exists in the user's collection" time="4.931">
+<system-out><![CDATA[
+Given the BookStore API base URL is configured..............................passed
+And a user already exists with a unique username and a strong password......passed
+And I have generated a valid token for that user............................passed
+And ISBN "isbn1" has been added to the user's collection....................passed
+When I delete ISBN "isbn1" from the user's collection using the saved token.passed
+Then the response status code should be 204.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="BookStore - Delete a Book" name="Delete a book that is not in the user's collection" time="5.501">
+<system-out><![CDATA[
+Given the BookStore API base URL is configured..............................passed
+And a user already exists with a unique username and a strong password......passed
+And I have generated a valid token for that user............................passed
+And ISBN "isbn1" has been added to the user's collection....................passed
+When I delete ISBN "invalidIsbn" from the user's collection using the saved token.passed
+Then the response status code should be 400.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="BookStore - Get Book by ISBN" name="Get a book using a valid ISBN" time="0.623">
+<system-out><![CDATA[
+Given the BookStore API base URL is configured..............................passed
+When I request the book with ISBN "isbn1"...................................passed
+Then the response status code should be 200.................................passed
+And the response should match the "book-schema.json" schema.................passed
+]]></system-out>
+</testcase>
+<testcase classname="BookStore - Get Book by ISBN" name="Get a book using an ISBN that does not exist" time="0.595">
+<system-out><![CDATA[
+Given the BookStore API base URL is configured..............................passed
+When I request the book with ISBN "invalidIsbn".............................passed
+Then the response status code should be 400.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="BookStore - Get Book by ISBN" name="Get a book using an empty ISBN query parameter" time="0.612">
+<system-out><![CDATA[
+Given the BookStore API base URL is configured..............................passed
+When I request the book with an empty ISBN..................................passed
+Then the response status code should be 400.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="BookStore - Get All Books" name="Get all books from the catalog" time="0.616">
+<system-out><![CDATA[
+Given the BookStore API base URL is configured..............................passed
+When I request all books from the catalog...................................passed
+Then the response status code should be 200.................................passed
+And the response should match the "books-response-schema.json" schema.......passed
+]]></system-out>
+</testcase>
+<testcase classname="BookStore - Replace a Book" name="Replace an existing book with a new valid ISBN using a valid token" time="5.315">
+<system-out><![CDATA[
+Given the BookStore API base URL is configured..............................passed
+And a user already exists with a unique username and a strong password......passed
+And I have generated a valid token for that user............................passed
+And ISBN "isbn1" has been added to the user's collection....................passed
+When I replace ISBN "isbn1" with ISBN "isbn2" using the saved token.........passed
+Then the response status code should be 200.................................passed
+And the response should match the "user-schema.json" schema.................passed
+]]></system-out>
+</testcase>
+<testcase classname="BookStore - Replace a Book" name="Replace a book without an authorization token" time="4.388">
+<system-out><![CDATA[
+Given the BookStore API base URL is configured..............................passed
+And a user already exists with a unique username and a strong password......passed
+And I have generated a valid token for that user............................passed
+And ISBN "isbn1" has been added to the user's collection....................passed
+When I replace ISBN "isbn1" with ISBN "isbn2" without a token...............passed
+Then the response status code should be 401.................................passed
+]]></system-out>
+</testcase>
+</testsuite>

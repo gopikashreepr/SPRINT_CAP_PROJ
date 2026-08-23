@@ -1,0 +1,4 @@
+stepdefinitions\BookStoreStepDefinitions.class
+runners\TestRunner.class
+stepdefinitions\AccountStepDefinitions.class
+hooks\Hooks.class

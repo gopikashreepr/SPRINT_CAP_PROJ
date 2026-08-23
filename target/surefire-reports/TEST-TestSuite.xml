@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="81.891" tests="22" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\admin\Downloads\RestAssuredBDDFramework (1)\RestAssuredBDDFramework\target\test-classes;C:\Users\admin\Downloads\RestAssuredBDDFramework (1)\RestAssuredBDDFramework\target\classes;C:\Users\admin\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\admin\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\admin\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\admin\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\admin\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\admin\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\admin\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\admin\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\admin\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\admin\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\admin\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\admin\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\admin\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\admin\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\admin\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\admin\.m2\repository\io\rest-assured\json-schema-validator\5.4.0\json-schema-validator-5.4.0.jar;C:\Users\admin\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\admin\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\admin\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\admin\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\admin\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\admin\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\admin\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\admin\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\admin\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\admin\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\admin\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\admin\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\admin\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\admin\.m2\repository\com\google\guava\guava\32.0.1-jre\guava-32.0.1-jre.jar;C:\Users\admin\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\admin\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\admin\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\admin\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\admin\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\admin\.m2\repository\io\cucumber\cucumber-java\7.15.0\cucumber-java-7.15.0.jar;C:\Users\admin\.m2\repository\io\cucumber\cucumber-core\7.15.0\cucumber-core-7.15.0.jar;C:\Users\admin\.m2\repository\io\cucumber\cucumber-gherkin\7.15.0\cucumber-gherkin-7.15.0.jar;C:\Users\admin\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.15.0\cucumber-gherkin-messages-7.15.0.jar;C:\Users\admin\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\admin\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\admin\.m2\repository\io\cucumber\tag-expressions\6.0.0\tag-expressions-6.0.0.jar;C:\Users\admin\.m2\repository\io\cucumber\cucumber-expressions\17.0.1\cucumber-expressions-17.0.1.jar;C:\Users\admin\.m2\repository\io\cucumber\datatable\7.15.0\datatable-7.15.0.jar;C:\Users\admin\.m2\repository\io\cucumber\cucumber-plugin\7.15.0\cucumber-plugin-7.15.0.jar;C:\Users\admin\.m2\repository\io\cucumber\docstring\7.15.0\docstring-7.15.0.jar;C:\Users\admin\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\admin\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\admin\.m2\repository\io\cucumber\ci-environment\10.0.0\ci-environment-10.0.0.jar;C:\Users\admin\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\admin\.m2\repository\io\cucumber\cucumber-testng\7.15.0\cucumber-testng-7.15.0.jar;C:\Users\admin\.m2\repository\io\cucumber\cucumber-picocontainer\7.15.0\cucumber-picocontainer-7.15.0.jar;C:\Users\admin\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\admin\.m2\repository\org\testng\testng\7.9.0\testng-7.9.0.jar;C:\Users\admin\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\admin\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\admin\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\admin\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\admin\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\admin\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\admin\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\admin\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\admin\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\admin\.m2\repository\tech\grasshopper\extentreports-cucumber7-adapter\1.14.0\extentreports-cucumber7-adapter-1.14.0.jar;C:\Users\admin\.m2\repository\tech\grasshopper\extent-pdf-report\2.12.0\extent-pdf-report-2.12.0.jar;C:\Users\admin\.m2\repository\tech\grasshopper\cucumber-pdf-report\2.14.0\cucumber-pdf-report-2.14.0.jar;C:\Users\admin\.m2\repository\org\apache\pdfbox\pdfbox\2.0.26\pdfbox-2.0.26.jar;C:\Users\admin\.m2\repository\org\apache\pdfbox\fontbox\2.0.26\fontbox-2.0.26.jar;C:\Users\admin\.m2\repository\org\knowm\xchart\xchart\3.8.0\xchart-3.8.0.jar;C:\Users\admin\.m2\repository\de\erichseifert\vectorgraphics2d\VectorGraphics2D\0.13\VectorGraphics2D-0.13.jar;C:\Users\admin\.m2\repository\de\rototor\pdfbox\graphics2d\0.30\graphics2d-0.30.jar;C:\Users\admin\.m2\repository\com\madgag\animated-gif-lib\1.4\animated-gif-lib-1.4.jar;C:\Users\admin\.m2\repository\org\yaml\snakeyaml\2.0\snakeyaml-2.0.jar;C:\Users\admin\.m2\repository\tech\grasshopper\table-layout\1.5.1\table-layout-1.5.1.jar;C:\Users\admin\.m2\repository\tech\grasshopper\rest-assured-cucumber-pdf-report\1.5.0\rest-assured-cucumber-pdf-report-1.5.0.jar;C:\Users\admin\.m2\repository\org\jsoup\jsoup\1.15.3\jsoup-1.15.3.jar;C:\Users\admin\.m2\repository\com\aventstack\klov-reporter\5.1.0\klov-reporter-5.1.0.jar;C:\Users\admin\.m2\repository\org\mongodb\mongodb-driver\3.6.4\mongodb-driver-3.6.4.jar;C:\Users\admin\.m2\repository\org\mongodb\mongodb-driver-core\3.6.4\mongodb-driver-core-3.6.4.jar;C:\Users\admin\.m2\repository\org\mongodb\bson\3.6.4\bson-3.6.4.jar;C:\Users\admin\.m2\repository\tech\grasshopper\htmlextentreporter\1.1.0\htmlextentreporter-1.1.0.jar;C:\Users\admin\.m2\repository\tech\grasshopper\extent-excel-report\1.4.0\extent-excel-report-1.4.0.jar;C:\Users\admin\.m2\repository\org\apache\poi\poi\5.2.3\poi-5.2.3.jar;C:\Users\admin\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\admin\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\admin\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\admin\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\admin\.m2\repository\org\apache\logging\log4j\log4j-api\2.18.0\log4j-api-2.18.0.jar;C:\Users\admin\.m2\repository\org\apache\poi\poi-ooxml\5.2.3\poi-ooxml-5.2.3.jar;C:\Users\admin\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.3\poi-ooxml-lite-5.2.3.jar;C:\Users\admin\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\admin\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\admin\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\Users\admin\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.16.1\jackson-databind-2.16.1.jar;C:\Users\admin\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.16.1\jackson-annotations-2.16.1.jar;C:\Users\admin\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.16.1\jackson-core-2.16.1.jar;C:\Users\admin\.m2\repository\org\slf4j\slf4j-simple\2.0.9\slf4j-simple-2.0.9.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
+    <property name="sun.java.command" value="C:\Users\admin\AppData\Local\Temp\surefire10570852636273269698\surefirebooter-20260823120020007_3.jar C:\Users\admin\AppData\Local\Temp\surefire10570852636273269698 2026-08-23T12-00-19_677-jvmRun1 surefire-20260823120020007_1tmp surefire_0-20260823120020007_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\admin\Downloads\RestAssuredBDDFramework (1)\RestAssuredBDDFramework\target\test-classes;C:\Users\admin\Downloads\RestAssuredBDDFramework (1)\RestAssuredBDDFramework\target\classes;C:\Users\admin\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\admin\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\admin\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\admin\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\admin\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\admin\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\admin\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\admin\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\admin\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\admin\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\admin\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\admin\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\admin\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\admin\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\admin\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\admin\.m2\repository\io\rest-assured\json-schema-validator\5.4.0\json-schema-validator-5.4.0.jar;C:\Users\admin\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\admin\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\admin\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\admin\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\admin\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\admin\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\admin\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\admin\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\admin\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\admin\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\admin\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\admin\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\admin\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\admin\.m2\repository\com\google\guava\guava\32.0.1-jre\guava-32.0.1-jre.jar;C:\Users\admin\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\admin\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\admin\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\admin\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\admin\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\admin\.m2\repository\io\cucumber\cucumber-java\7.15.0\cucumber-java-7.15.0.jar;C:\Users\admin\.m2\repository\io\cucumber\cucumber-core\7.15.0\cucumber-core-7.15.0.jar;C:\Users\admin\.m2\repository\io\cucumber\cucumber-gherkin\7.15.0\cucumber-gherkin-7.15.0.jar;C:\Users\admin\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.15.0\cucumber-gherkin-messages-7.15.0.jar;C:\Users\admin\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\admin\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\admin\.m2\repository\io\cucumber\tag-expressions\6.0.0\tag-expressions-6.0.0.jar;C:\Users\admin\.m2\repository\io\cucumber\cucumber-expressions\17.0.1\cucumber-expressions-17.0.1.jar;C:\Users\admin\.m2\repository\io\cucumber\datatable\7.15.0\datatable-7.15.0.jar;C:\Users\admin\.m2\repository\io\cucumber\cucumber-plugin\7.15.0\cucumber-plugin-7.15.0.jar;C:\Users\admin\.m2\repository\io\cucumber\docstring\7.15.0\docstring-7.15.0.jar;C:\Users\admin\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\admin\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\admin\.m2\repository\io\cucumber\ci-environment\10.0.0\ci-environment-10.0.0.jar;C:\Users\admin\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\admin\.m2\repository\io\cucumber\cucumber-testng\7.15.0\cucumber-testng-7.15.0.jar;C:\Users\admin\.m2\repository\io\cucumber\cucumber-picocontainer\7.15.0\cucumber-picocontainer-7.15.0.jar;C:\Users\admin\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\admin\.m2\repository\org\testng\testng\7.9.0\testng-7.9.0.jar;C:\Users\admin\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\admin\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\admin\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\admin\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\admin\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\admin\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\admin\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\admin\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\admin\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\admin\.m2\repository\tech\grasshopper\extentreports-cucumber7-adapter\1.14.0\extentreports-cucumber7-adapter-1.14.0.jar;C:\Users\admin\.m2\repository\tech\grasshopper\extent-pdf-report\2.12.0\extent-pdf-report-2.12.0.jar;C:\Users\admin\.m2\repository\tech\grasshopper\cucumber-pdf-report\2.14.0\cucumber-pdf-report-2.14.0.jar;C:\Users\admin\.m2\repository\org\apache\pdfbox\pdfbox\2.0.26\pdfbox-2.0.26.jar;C:\Users\admin\.m2\repository\org\apache\pdfbox\fontbox\2.0.26\fontbox-2.0.26.jar;C:\Users\admin\.m2\repository\org\knowm\xchart\xchart\3.8.0\xchart-3.8.0.jar;C:\Users\admin\.m2\repository\de\erichseifert\vectorgraphics2d\VectorGraphics2D\0.13\VectorGraphics2D-0.13.jar;C:\Users\admin\.m2\repository\de\rototor\pdfbox\graphics2d\0.30\graphics2d-0.30.jar;C:\Users\admin\.m2\repository\com\madgag\animated-gif-lib\1.4\animated-gif-lib-1.4.jar;C:\Users\admin\.m2\repository\org\yaml\snakeyaml\2.0\snakeyaml-2.0.jar;C:\Users\admin\.m2\repository\tech\grasshopper\table-layout\1.5.1\table-layout-1.5.1.jar;C:\Users\admin\.m2\repository\tech\grasshopper\rest-assured-cucumber-pdf-report\1.5.0\rest-assured-cucumber-pdf-report-1.5.0.jar;C:\Users\admin\.m2\repository\org\jsoup\jsoup\1.15.3\jsoup-1.15.3.jar;C:\Users\admin\.m2\repository\com\aventstack\klov-reporter\5.1.0\klov-reporter-5.1.0.jar;C:\Users\admin\.m2\repository\org\mongodb\mongodb-driver\3.6.4\mongodb-driver-3.6.4.jar;C:\Users\admin\.m2\repository\org\mongodb\mongodb-driver-core\3.6.4\mongodb-driver-core-3.6.4.jar;C:\Users\admin\.m2\repository\org\mongodb\bson\3.6.4\bson-3.6.4.jar;C:\Users\admin\.m2\repository\tech\grasshopper\htmlextentreporter\1.1.0\htmlextentreporter-1.1.0.jar;C:\Users\admin\.m2\repository\tech\grasshopper\extent-excel-report\1.4.0\extent-excel-report-1.4.0.jar;C:\Users\admin\.m2\repository\org\apache\poi\poi\5.2.3\poi-5.2.3.jar;C:\Users\admin\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\admin\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\admin\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\admin\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\admin\.m2\repository\org\apache\logging\log4j\log4j-api\2.18.0\log4j-api-2.18.0.jar;C:\Users\admin\.m2\repository\org\apache\poi\poi-ooxml\5.2.3\poi-ooxml-5.2.3.jar;C:\Users\admin\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.3\poi-ooxml-lite-5.2.3.jar;C:\Users\admin\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\admin\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\admin\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\Users\admin\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.16.1\jackson-databind-2.16.1.jar;C:\Users\admin\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.16.1\jackson-annotations-2.16.1.jar;C:\Users\admin\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.16.1\jackson-core-2.16.1.jar;C:\Users\admin\.m2\repository\org\slf4j\slf4j-simple\2.0.9\slf4j-simple-2.0.9.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\admin"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-10-15"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-21"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\admin\Downloads\RestAssuredBDDFramework (1)\RestAssuredBDDFramework"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\admin\AppData\Local\Temp\surefire10570852636273269698\surefirebooter-20260823120020007_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.5+9-LTS-239"/>
+    <property name="user.name" value="admin"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\admin\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\admin\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.5"/>
+    <property name="user.dir" value="C:\Users\admin\Downloads\RestAssuredBDDFramework (1)\RestAssuredBDDFramework"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="env" value=""/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;c:\Users\admin\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\admin\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Program Files\Java\jdk-21\bin;C:\Program Files\Java\jdk-21\bin;C:\oracle\product\10.2.0\db_1\bin;c:\Users\admin\AppData\Local\Programs\cursor\resources\app\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\admin\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.12;C:\;C:\xampp\php;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\MongoDB\Server\8.0\bin;C:\Users\admin\AppData\Local\Programs\Python\Python312;C:\Users\admin\AppData\Local\Programs\Python\Python312\Scripts;C:\Users\admin\AppData\Local\Programs\Python\Launcher\;C:\Ruby33-x64\bin;C:\Users\admin\AppData\Local\Microsoft\WindowsApps;C:\Users\admin\AppData\Roaming\npm;C:\Program Files\mongosh\;c:\Users\admin\AppData\Local\Programs\cursor\resources\app\bin;C:\Program Files\nodejs\;C:\Program Files\Apache\Maven\apache-maven-3.9.10\bin;C:\Users\admin\AppData\Local\Programs\Tesseract-OCR;C:\Program Files\poppler-24.08.0\Library\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\170\DTS\Binn\;C:\Users\admin\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\admin\AppData\Local\Programs\Python\Python310\;C:\Users\admin\AppData\Local\Programs\Python\Launcher\;C:\Ruby33-x64\bin;C:\Users\admin\AppData\Local\Microsoft\WindowsApps;C:\Users\admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\admin\AppData\Roaming\npm;C:\Users\admin\.dotnet\tools;c:\Users\admin\.vscode\extensions\vscjava.vscode-java-debug-0.59.0\bundled\scripts\noConfigScripts;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.5+9-LTS-239"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="runScenario[&quot;Create a user with valid unique credentials&quot;, &quot;Account - Create User&quot;](1)" classname="runners.TestRunner" time="6.942">
+    <system-out><![CDATA[
+@Account @Create @Positive @Smoke
+Scenario: Create a user with valid unique credentials         # src/test/resources/features/account/CreateUser.feature:10
+=== Starting scenario: Create a user with valid unique credentials ===
+  Given the BookStore API base URL is configured              # stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()
+  Given I generate a unique username and a strong password    # stepdefinitions.AccountStepDefinitions.iGenerateUniqueUsernameAndPassword()
+  When I send a request to create the user                    # stepdefinitions.AccountStepDefinitions.iSendRequestToCreateUser()
+  Then the response status code should be 201                 # stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)
+  And the response should match the "user-schema.json" schema # stepdefinitions.AccountStepDefinitions.theResponseShouldMatchSchema(java.lang.String)
+  And the created userId should be saved for later steps      # stepdefinitions.AccountStepDefinitions.theCreatedUserIdShouldBeSaved()
+=== Finished scenario: Create a user with valid unique credentials | Status: PASSED ===
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Create a user with a weak password&quot;, &quot;Account - Create User&quot;](2)" classname="runners.TestRunner" time="0.705">
+    <system-out><![CDATA[
+@Account @Create @Negative
+Scenario: Create a user with a weak password                   # src/test/resources/features/account/CreateUser.feature:18
+=== Starting scenario: Create a user with a weak password ===
+  Given the BookStore API base URL is configured               # stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()
+  Given I generate a unique username                           # stepdefinitions.AccountStepDefinitions.iGenerateUniqueUsername()
+  And I set the password to "123"                              # stepdefinitions.AccountStepDefinitions.iSetThePasswordTo(java.lang.String)
+  When I send a request to create the user                     # stepdefinitions.AccountStepDefinitions.iSendRequestToCreateUser()
+  Then the response status code should be 400                  # stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)
+  And the response should match the "error-schema.json" schema # stepdefinitions.AccountStepDefinitions.theResponseShouldMatchSchema(java.lang.String)
+=== Finished scenario: Create a user with a weak password | Status: PASSED ===
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Create a user with an empty username&quot;, &quot;Account - Create User&quot;](3)" classname="runners.TestRunner" time="0.707">
+    <system-out><![CDATA[
+@Account @Create @Boundary
+Scenario: Create a user with an empty username   # src/test/resources/features/account/CreateUser.feature:26
+=== Starting scenario: Create a user with an empty username ===
+  Given the BookStore API base URL is configured # stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()
+  Given I set the username to ""                 # stepdefinitions.AccountStepDefinitions.iSetTheUsernameTo(java.lang.String)
+  And I generate a strong password               # stepdefinitions.AccountStepDefinitions.iGenerateStrongPassword()
+  When I send a request to create the user       # stepdefinitions.AccountStepDefinitions.iSendRequestToCreateUser()
+  Then the response status code should be 400    # stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)
+=== Finished scenario: Create a user with an empty username | Status: PASSED ===
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Delete an existing user with a valid token&quot;, &quot;Account - Delete User&quot;](4)" classname="runners.TestRunner" time="4.79">
+    <system-out><![CDATA[
+@Account @Delete @Positive @Smoke @Chaining
+Scenario: Delete an existing user with a valid token                     # src/test/resources/features/account/DeleteUser.feature:12
+=== Starting scenario: Delete an existing user with a valid token ===
+  Given the BookStore API base URL is configured                         # stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()
+  And a user already exists with a unique username and a strong password # stepdefinitions.AccountStepDefinitions.aUserAlreadyExists()
+  And I have generated a valid token for that user                       # stepdefinitions.AccountStepDefinitions.iHaveGeneratedValidToken()
+  When I send a request to delete the saved user using the saved token   # stepdefinitions.AccountStepDefinitions.iDeleteSavedUserWithToken()
+  Then the response status code should be 204                            # stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)
+=== Finished scenario: Delete an existing user with a valid token | Status: PASSED ===
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Delete a user without an authorization token&quot;, &quot;Account - Delete User&quot;](5)" classname="runners.TestRunner" time="3.896">
+    <system-out><![CDATA[
+@Account @Delete @Negative
+Scenario: Delete a user without an authorization token                   # src/test/resources/features/account/DeleteUser.feature:17
+=== Starting scenario: Delete a user without an authorization token ===
+  Given the BookStore API base URL is configured                         # stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()
+  And a user already exists with a unique username and a strong password # stepdefinitions.AccountStepDefinitions.aUserAlreadyExists()
+  And I have generated a valid token for that user                       # stepdefinitions.AccountStepDefinitions.iHaveGeneratedValidToken()
+  When I send a request to delete the saved user without a token         # stepdefinitions.AccountStepDefinitions.iDeleteSavedUserWithoutToken()
+  Then the response status code should be 401                            # stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)
+=== Finished scenario: Delete a user without an authorization token | Status: PASSED ===
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Generate a token with valid credentials&quot;, &quot;Account - Generate Token&quot;](6)" classname="runners.TestRunner" time="3.007">
+    <system-out><![CDATA[
+@Account @Auth @Positive @Smoke @Chaining
+Scenario: Generate a token with valid credentials                        # src/test/resources/features/account/GenerateToken.feature:11
+=== Starting scenario: Generate a token with valid credentials ===
+  Given the BookStore API base URL is configured                         # stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()
+  And a user already exists with a unique username and a strong password # stepdefinitions.AccountStepDefinitions.aUserAlreadyExists()
+  When I request a token for the existing user                           # stepdefinitions.AccountStepDefinitions.iRequestTokenForExistingUser()
+  Then the response status code should be 200                            # stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)
+  And the response should match the "token-schema.json" schema           # stepdefinitions.AccountStepDefinitions.theResponseShouldMatchSchema(java.lang.String)
+  And the response status field should be "Success"                      # stepdefinitions.AccountStepDefinitions.theResponseStatusFieldShouldBe(java.lang.String)
+  And the token should be saved for later steps                          # stepdefinitions.AccountStepDefinitions.theTokenShouldBeSaved()
+=== Finished scenario: Generate a token with valid credentials | Status: PASSED ===
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Generate a token with an incorrect password&quot;, &quot;Account - Generate Token&quot;](7)" classname="runners.TestRunner" time="2.972">
+    <system-out><![CDATA[
+@Account @Auth @Negative
+Scenario: Generate a token with an incorrect password                    # src/test/resources/features/account/GenerateToken.feature:19
+=== Starting scenario: Generate a token with an incorrect password ===
+  Given the BookStore API base URL is configured                         # stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()
+  And a user already exists with a unique username and a strong password # stepdefinitions.AccountStepDefinitions.aUserAlreadyExists()
+  When I request a token using an incorrect password                     # stepdefinitions.AccountStepDefinitions.iRequestTokenWithIncorrectPassword()
+  Then the response status code should be 200                            # stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)
+  And the response status field should be "Failed"                       # stepdefinitions.AccountStepDefinitions.theResponseStatusFieldShouldBe(java.lang.String)
+=== Finished scenario: Generate a token with an incorrect password | Status: PASSED ===
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Get an existing user&apos;s details using a valid token&quot;, &quot;Account - Get User&quot;](8)" classname="runners.TestRunner" time="5.351">
+    <system-out><![CDATA[
+@Account @Read @Positive @Smoke @Chaining
+Scenario: Get an existing user's details using a valid token             # src/test/resources/features/account/GetUser.feature:12
+=== Starting scenario: Get an existing user's details using a valid token ===
+  Given the BookStore API base URL is configured                         # stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()
+  And a user already exists with a unique username and a strong password # stepdefinitions.AccountStepDefinitions.aUserAlreadyExists()
+  And I have generated a valid token for that user                       # stepdefinitions.AccountStepDefinitions.iHaveGeneratedValidToken()
+  When I request the user details using the saved userId and token       # stepdefinitions.AccountStepDefinitions.iRequestUserDetailsWithToken()
+  Then the response status code should be 200                            # stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)
+  And the response should match the "user-schema.json" schema            # stepdefinitions.AccountStepDefinitions.theResponseShouldMatchSchema(java.lang.String)
+=== Finished scenario: Get an existing user's details using a valid token | Status: PASSED ===
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Get user details without an authorization token&quot;, &quot;Account - Get User&quot;](9)" classname="runners.TestRunner" time="4.44">
+    <system-out><![CDATA[
+@Account @Read @Negative
+Scenario: Get user details without an authorization token                # src/test/resources/features/account/GetUser.feature:18
+=== Starting scenario: Get user details without an authorization token ===
+  Given the BookStore API base URL is configured                         # stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()
+  And a user already exists with a unique username and a strong password # stepdefinitions.AccountStepDefinitions.aUserAlreadyExists()
+  And I have generated a valid token for that user                       # stepdefinitions.AccountStepDefinitions.iHaveGeneratedValidToken()
+  When I request the user details using the saved userId but no token    # stepdefinitions.AccountStepDefinitions.iRequestUserDetailsWithoutToken()
+  Then the response status code should be 401                            # stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)
+=== Finished scenario: Get user details without an authorization token | Status: PASSED ===
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Add a valid ISBN to the user&apos;s collection&quot;, &quot;BookStore - Add Books to User Collection&quot;](10)" classname="runners.TestRunner" time="4.709">
+    <system-out><![CDATA[
+@BookStore @Create @Positive @Smoke @Chaining
+Scenario: Add a valid ISBN to the user's collection                      # src/test/resources/features/bookstore/AddBooks.feature:12
+=== Starting scenario: Add a valid ISBN to the user's collection ===
+  Given the BookStore API base URL is configured                         # stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()
+  And a user already exists with a unique username and a strong password # stepdefinitions.AccountStepDefinitions.aUserAlreadyExists()
+  And I have generated a valid token for that user                       # stepdefinitions.AccountStepDefinitions.iHaveGeneratedValidToken()
+  When I add ISBN "isbn1" to the user's collection using the saved token # stepdefinitions.BookStoreStepDefinitions.iAddIsbnToCollection(java.lang.String)
+  Then the response status code should be 201                            # stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)
+=== Finished scenario: Add a valid ISBN to the user's collection | Status: PASSED ===
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Add an invalid ISBN to the user&apos;s collection&quot;, &quot;BookStore - Add Books to User Collection&quot;](11)" classname="runners.TestRunner" time="3.69">
+    <system-out><![CDATA[
+@BookStore @Create @Negative
+Scenario: Add an invalid ISBN to the user's collection                         # src/test/resources/features/bookstore/AddBooks.feature:17
+=== Starting scenario: Add an invalid ISBN to the user's collection ===
+  Given the BookStore API base URL is configured                               # stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()
+  And a user already exists with a unique username and a strong password       # stepdefinitions.AccountStepDefinitions.aUserAlreadyExists()
+  And I have generated a valid token for that user                             # stepdefinitions.AccountStepDefinitions.iHaveGeneratedValidToken()
+  When I add ISBN "invalidIsbn" to the user's collection using the saved token # stepdefinitions.BookStoreStepDefinitions.iAddIsbnToCollection(java.lang.String)
+  Then the response status code should be 400                                  # stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)
+  And the response should match the "error-schema.json" schema                 # stepdefinitions.AccountStepDefinitions.theResponseShouldMatchSchema(java.lang.String)
+=== Finished scenario: Add an invalid ISBN to the user's collection | Status: PASSED ===
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Add an empty list of ISBNs to the user&apos;s collection&quot;, &quot;BookStore - Add Books to User Collection&quot;](12)" classname="runners.TestRunner" time="3.477">
+    <system-out><![CDATA[
+@BookStore @Create @Edge
+Scenario: Add an empty list of ISBNs to the user's collection                      # src/test/resources/features/bookstore/AddBooks.feature:23
+=== Starting scenario: Add an empty list of ISBNs to the user's collection ===
+  Given the BookStore API base URL is configured                                   # stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()
+  And a user already exists with a unique username and a strong password           # stepdefinitions.AccountStepDefinitions.aUserAlreadyExists()
+  And I have generated a valid token for that user                                 # stepdefinitions.AccountStepDefinitions.iHaveGeneratedValidToken()
+  When I add an empty list of ISBNs to the user's collection using the saved token # stepdefinitions.BookStoreStepDefinitions.iAddEmptyListOfIsbns()
+  Then the response status code should be 400                                      # stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)
+=== Finished scenario: Add an empty list of ISBNs to the user's collection | Status: PASSED ===
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Delete all books from the user&apos;s collection using a valid token&quot;, &quot;BookStore - Delete All Books&quot;](13)" classname="runners.TestRunner" time="5.732">
+    <system-out><![CDATA[
+@BookStore @Delete @Positive @Smoke @Chaining
+Scenario: Delete all books from the user's collection using a valid token  # src/test/resources/features/bookstore/DeleteAllBooks.feature:13
+=== Starting scenario: Delete all books from the user's collection using a valid token ===
+  Given the BookStore API base URL is configured                           # stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()
+  And a user already exists with a unique username and a strong password   # stepdefinitions.AccountStepDefinitions.aUserAlreadyExists()
+  And I have generated a valid token for that user                         # stepdefinitions.AccountStepDefinitions.iHaveGeneratedValidToken()
+  And ISBN "isbn1" has been added to the user's collection                 # stepdefinitions.BookStoreStepDefinitions.isbnHasBeenAddedToCollection(java.lang.String)
+  When I delete all books from the user's collection using the saved token # stepdefinitions.BookStoreStepDefinitions.iDeleteAllBooksWithToken()
+  Then the response status code should be 204                              # stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)
+=== Finished scenario: Delete all books from the user's collection using a valid token | Status: PASSED ===
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Delete all books without an authorization token&quot;, &quot;BookStore - Delete All Books&quot;](14)" classname="runners.TestRunner" time="5.122">
+    <system-out><![CDATA[
+@BookStore @Delete @Negative
+Scenario: Delete all books without an authorization token                # src/test/resources/features/bookstore/DeleteAllBooks.feature:18
+=== Starting scenario: Delete all books without an authorization token ===
+  Given the BookStore API base URL is configured                         # stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()
+  And a user already exists with a unique username and a strong password # stepdefinitions.AccountStepDefinitions.aUserAlreadyExists()
+  And I have generated a valid token for that user                       # stepdefinitions.AccountStepDefinitions.iHaveGeneratedValidToken()
+  And ISBN "isbn1" has been added to the user's collection               # stepdefinitions.BookStoreStepDefinitions.isbnHasBeenAddedToCollection(java.lang.String)
+  When I delete all books from the user's collection without a token     # stepdefinitions.BookStoreStepDefinitions.iDeleteAllBooksWithoutToken()
+  Then the response status code should be 401                            # stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)
+=== Finished scenario: Delete all books without an authorization token | Status: PASSED ===
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Delete a book that exists in the user&apos;s collection&quot;, &quot;BookStore - Delete a Book&quot;](15)" classname="runners.TestRunner" time="4.935">
+    <system-out><![CDATA[
+@BookStore @Delete @Positive @Smoke @Chaining
+Scenario: Delete a book that exists in the user's collection                  # src/test/resources/features/bookstore/DeleteBook.feature:13
+=== Starting scenario: Delete a book that exists in the user's collection ===
+  Given the BookStore API base URL is configured                              # stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()
+  And a user already exists with a unique username and a strong password      # stepdefinitions.AccountStepDefinitions.aUserAlreadyExists()
+  And I have generated a valid token for that user                            # stepdefinitions.AccountStepDefinitions.iHaveGeneratedValidToken()
+  And ISBN "isbn1" has been added to the user's collection                    # stepdefinitions.BookStoreStepDefinitions.isbnHasBeenAddedToCollection(java.lang.String)
+  When I delete ISBN "isbn1" from the user's collection using the saved token # stepdefinitions.BookStoreStepDefinitions.iDeleteIsbnFromCollection(java.lang.String)
+  Then the response status code should be 204                                 # stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)
+=== Finished scenario: Delete a book that exists in the user's collection | Status: PASSED ===
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Delete a book that is not in the user&apos;s collection&quot;, &quot;BookStore - Delete a Book&quot;](16)" classname="runners.TestRunner" time="5.506">
+    <system-out><![CDATA[
+@BookStore @Delete @Negative
+Scenario: Delete a book that is not in the user's collection                        # src/test/resources/features/bookstore/DeleteBook.feature:18
+=== Starting scenario: Delete a book that is not in the user's collection ===
+  Given the BookStore API base URL is configured                                    # stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()
+  And a user already exists with a unique username and a strong password            # stepdefinitions.AccountStepDefinitions.aUserAlreadyExists()
+  And I have generated a valid token for that user                                  # stepdefinitions.AccountStepDefinitions.iHaveGeneratedValidToken()
+  And ISBN "isbn1" has been added to the user's collection                          # stepdefinitions.BookStoreStepDefinitions.isbnHasBeenAddedToCollection(java.lang.String)
+  When I delete ISBN "invalidIsbn" from the user's collection using the saved token # stepdefinitions.BookStoreStepDefinitions.iDeleteIsbnFromCollection(java.lang.String)
+  Then the response status code should be 400                                       # stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)
+=== Finished scenario: Delete a book that is not in the user's collection | Status: PASSED ===
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Get a book using a valid ISBN&quot;, &quot;BookStore - Get Book by ISBN&quot;](17)" classname="runners.TestRunner" time="0.63">
+    <system-out><![CDATA[
+@BookStore @Read @Positive @Smoke
+Scenario: Get a book using a valid ISBN                       # src/test/resources/features/bookstore/GetBookByIsbn.feature:10
+=== Starting scenario: Get a book using a valid ISBN ===
+  Given the BookStore API base URL is configured              # stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()
+  When I request the book with ISBN "isbn1"                   # stepdefinitions.BookStoreStepDefinitions.iRequestBookWithIsbn(java.lang.String)
+  Then the response status code should be 200                 # stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)
+  And the response should match the "book-schema.json" schema # stepdefinitions.AccountStepDefinitions.theResponseShouldMatchSchema(java.lang.String)
+=== Finished scenario: Get a book using a valid ISBN | Status: PASSED ===
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Get a book using an ISBN that does not exist&quot;, &quot;BookStore - Get Book by ISBN&quot;](18)" classname="runners.TestRunner" time="0.599">
+    <system-out><![CDATA[
+@BookStore @Read @Negative
+Scenario: Get a book using an ISBN that does not exist # src/test/resources/features/bookstore/GetBookByIsbn.feature:16
+=== Starting scenario: Get a book using an ISBN that does not exist ===
+  Given the BookStore API base URL is configured       # stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()
+  When I request the book with ISBN "invalidIsbn"      # stepdefinitions.BookStoreStepDefinitions.iRequestBookWithIsbn(java.lang.String)
+  Then the response status code should be 400          # stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)
+=== Finished scenario: Get a book using an ISBN that does not exist | Status: PASSED ===
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Get a book using an empty ISBN query parameter&quot;, &quot;BookStore - Get Book by ISBN&quot;](19)" classname="runners.TestRunner" time="0.616">
+    <system-out><![CDATA[
+@BookStore @Read @Boundary
+Scenario: Get a book using an empty ISBN query parameter # src/test/resources/features/bookstore/GetBookByIsbn.feature:21
+=== Starting scenario: Get a book using an empty ISBN query parameter ===
+  Given the BookStore API base URL is configured         # stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()
+  When I request the book with an empty ISBN             # stepdefinitions.BookStoreStepDefinitions.iRequestBookWithEmptyIsbn()
+  Then the response status code should be 400            # stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)
+=== Finished scenario: Get a book using an empty ISBN query parameter | Status: PASSED ===
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Get all books from the catalog&quot;, &quot;BookStore - Get All Books&quot;](20)" classname="runners.TestRunner" time="0.621">
+    <system-out><![CDATA[
+@BookStore @Read @Positive @Smoke
+Scenario: Get all books from the catalog                                # src/test/resources/features/bookstore/GetBooks.feature:10
+=== Starting scenario: Get all books from the catalog ===
+  Given the BookStore API base URL is configured                        # stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()
+  When I request all books from the catalog                             # stepdefinitions.BookStoreStepDefinitions.iRequestAllBooksFromCatalog()
+  Then the response status code should be 200                           # stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)
+  And the response should match the "books-response-schema.json" schema # stepdefinitions.AccountStepDefinitions.theResponseShouldMatchSchema(java.lang.String)
+=== Finished scenario: Get all books from the catalog | Status: PASSED ===
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Replace an existing book with a new valid ISBN using a valid token&quot;, &quot;BookStore - Replace a Book&quot;](21)" classname="runners.TestRunner" time="5.321">
+    <system-out><![CDATA[
+@BookStore @Update @Positive @Smoke @Chaining
+Scenario: Replace an existing book with a new valid ISBN using a valid token # src/test/resources/features/bookstore/ReplaceBook.feature:13
+=== Starting scenario: Replace an existing book with a new valid ISBN using a valid token ===
+  Given the BookStore API base URL is configured                             # stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()
+  And a user already exists with a unique username and a strong password     # stepdefinitions.AccountStepDefinitions.aUserAlreadyExists()
+  And I have generated a valid token for that user                           # stepdefinitions.AccountStepDefinitions.iHaveGeneratedValidToken()
+  And ISBN "isbn1" has been added to the user's collection                   # stepdefinitions.BookStoreStepDefinitions.isbnHasBeenAddedToCollection(java.lang.String)
+  When I replace ISBN "isbn1" with ISBN "isbn2" using the saved token        # stepdefinitions.BookStoreStepDefinitions.iReplaceIsbnWithIsbn(java.lang.String,java.lang.String)
+  Then the response status code should be 200                                # stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)
+  And the response should match the "user-schema.json" schema                # stepdefinitions.AccountStepDefinitions.theResponseShouldMatchSchema(java.lang.String)
+=== Finished scenario: Replace an existing book with a new valid ISBN using a valid token | Status: PASSED ===
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Replace a book without an authorization token&quot;, &quot;BookStore - Replace a Book&quot;](22)" classname="runners.TestRunner" time="4.393">
+    <system-out><![CDATA[
+@BookStore @Update @Negative
+Scenario: Replace a book without an authorization token                  # src/test/resources/features/bookstore/ReplaceBook.feature:19
+=== Starting scenario: Replace a book without an authorization token ===
+  Given the BookStore API base URL is configured                         # stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()
+  And a user already exists with a unique username and a strong password # stepdefinitions.AccountStepDefinitions.aUserAlreadyExists()
+  And I have generated a valid token for that user                       # stepdefinitions.AccountStepDefinitions.iHaveGeneratedValidToken()
+  And ISBN "isbn1" has been added to the user's collection               # stepdefinitions.BookStoreStepDefinitions.isbnHasBeenAddedToCollection(java.lang.String)
+  When I replace ISBN "isbn1" with ISBN "isbn2" without a token          # stepdefinitions.BookStoreStepDefinitions.iReplaceIsbnWithIsbnWithoutToken(java.lang.String,java.lang.String)
+  Then the response status code should be 401                            # stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)
+=== Finished scenario: Replace a book without an authorization token | Status: PASSED ===
+]]></system-out>
+  </testcase>
+</testsuite>

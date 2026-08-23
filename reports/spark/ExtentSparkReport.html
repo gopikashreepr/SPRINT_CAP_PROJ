@@ -1,0 +1,2685 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>BookStore API - Automation Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">RestAssured BDD Cucumber Extent Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Aug 23, 2026 12:00:22 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@Read</a><a class="dropdown-item" href="#">@Chaining</a><a class="dropdown-item" href="#">@Edge</a><a class="dropdown-item" href="#">@Create</a><a class="dropdown-item" href="#">@Smoke</a><a class="dropdown-item" href="#">@Account</a><a class="dropdown-item" href="#">@Delete</a><a class="dropdown-item" href="#">@BookStore</a><a class="dropdown-item" href="#">@Boundary</a><a class="dropdown-item" href="#">@Auth</a><a class="dropdown-item" href="#">@Positive</a><a class="dropdown-item" href="#">@Negative</a><a class="dropdown-item" href="#">@Update</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Account - Create User</p>
+            <p class="text-sm">
+              <span>12:00:24 PM</span> / <span>00:00:07:832</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Account - Create User</h5>
+<span class='badge badge-success'>08.23.2026 12:00:24 PM</span>
+<span class='badge badge-danger'>08.23.2026 12:00:32 PM</span>
+<span class='badge badge-default'>00:00:07:832</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As an API consumer
+I want to create a new BookStore user
+So that I can authenticate and manage a book collection</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Create a user with valid unique credentials</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()">
+                <span>Given the BookStore API base URL is configured</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.iGenerateUniqueUsernameAndPassword()">
+                <span>Given I generate a unique username and a strong password</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.iSendRequestToCreateUser()">
+                <span>When I send a request to create the user</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)">
+                <span>Then the response status code should be 201</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theResponseShouldMatchSchema(java.lang.String)">
+                <span>And the response should match the "user-schema.json" schema</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theCreatedUserIdShouldBeSaved()">
+                <span>And the created userId should be saved for later steps</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="11"><span class="badge log pass-bg mr-2">Pass</span>Create a user with a weak password</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()">
+                <span>Given the BookStore API base URL is configured</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.iGenerateUniqueUsername()">
+                <span>Given I generate a unique username</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.iSetThePasswordTo(java.lang.String)">
+                <span>And I set the password to "123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.iSendRequestToCreateUser()">
+                <span>When I send a request to create the user</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)">
+                <span>Then the response status code should be 400</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theResponseShouldMatchSchema(java.lang.String)">
+                <span>And the response should match the "error-schema.json" schema</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="20"><span class="badge log pass-bg mr-2">Pass</span>Create a user with an empty username</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()">
+                <span>Given the BookStore API base URL is configured</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.iSetTheUsernameTo(java.lang.String)">
+                <span>Given I set the username to ""</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.iGenerateStrongPassword()">
+                <span>And I generate a strong password</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.iSendRequestToCreateUser()">
+                <span>When I send a request to create the user</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)">
+                <span>Then the response status code should be 400</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="28"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Account - Delete User</p>
+            <p class="text-sm">
+              <span>12:00:32 PM</span> / <span>00:00:08:690</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Account - Delete User</h5>
+<span class='badge badge-success'>08.23.2026 12:00:32 PM</span>
+<span class='badge badge-danger'>08.23.2026 12:00:40 PM</span>
+<span class='badge badge-default'>00:00:08:690</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=28</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As an API consumer
+I want to delete a user account
+So that account cleanup can be verified</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="29"><span class="badge log pass-bg mr-2">Pass</span>Delete an existing user with a valid token</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()">
+                <span>Given the BookStore API base URL is configured</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.aUserAlreadyExists()">
+                <span>And a user already exists with a unique username and a strong password</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.iHaveGeneratedValidToken()">
+                <span>And I have generated a valid token for that user</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.iDeleteSavedUserWithToken()">
+                <span>When I send a request to delete the saved user using the saved token</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)">
+                <span>Then the response status code should be 204</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="37"><span class="badge log pass-bg mr-2">Pass</span>Delete a user without an authorization token</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()">
+                <span>Given the BookStore API base URL is configured</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.aUserAlreadyExists()">
+                <span>And a user already exists with a unique username and a strong password</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.iHaveGeneratedValidToken()">
+                <span>And I have generated a valid token for that user</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.iDeleteSavedUserWithoutToken()">
+                <span>When I send a request to delete the saved user without a token</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)">
+                <span>Then the response status code should be 401</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="45"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Account - Generate Token</p>
+            <p class="text-sm">
+              <span>12:00:41 PM</span> / <span>00:00:05:967</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Account - Generate Token</h5>
+<span class='badge badge-success'>08.23.2026 12:00:41 PM</span>
+<span class='badge badge-danger'>08.23.2026 12:00:46 PM</span>
+<span class='badge badge-default'>00:00:05:967</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=45</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As an API consumer
+I want to authenticate and obtain a bearer token
+So that I can perform authorized operations against BookStore endpoints</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="46"><span class="badge log pass-bg mr-2">Pass</span>Generate a token with valid credentials</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()">
+                <span>Given the BookStore API base URL is configured</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.aUserAlreadyExists()">
+                <span>And a user already exists with a unique username and a strong password</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.iRequestTokenForExistingUser()">
+                <span>When I request a token for the existing user</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)">
+                <span>Then the response status code should be 200</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theResponseShouldMatchSchema(java.lang.String)">
+                <span>And the response should match the "token-schema.json" schema</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theResponseStatusFieldShouldBe(java.lang.String)">
+                <span>And the response status field should be "Success"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theTokenShouldBeSaved()">
+                <span>And the token should be saved for later steps</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="56"><span class="badge log pass-bg mr-2">Pass</span>Generate a token with an incorrect password</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()">
+                <span>Given the BookStore API base URL is configured</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.aUserAlreadyExists()">
+                <span>And a user already exists with a unique username and a strong password</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.iRequestTokenWithIncorrectPassword()">
+                <span>When I request a token using an incorrect password</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)">
+                <span>Then the response status code should be 200</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theResponseStatusFieldShouldBe(java.lang.String)">
+                <span>And the response status field should be "Failed"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="64"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Account - Get User</p>
+            <p class="text-sm">
+              <span>12:00:46 PM</span> / <span>00:00:09:778</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Account - Get User</h5>
+<span class='badge badge-success'>08.23.2026 12:00:46 PM</span>
+<span class='badge badge-danger'>08.23.2026 12:00:56 PM</span>
+<span class='badge badge-default'>00:00:09:778</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=64</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As an API consumer
+I want to retrieve user details by userId
+So that I can verify account information</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="65"><span class="badge log pass-bg mr-2">Pass</span>Get an existing user's details using a valid token</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()">
+                <span>Given the BookStore API base URL is configured</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.aUserAlreadyExists()">
+                <span>And a user already exists with a unique username and a strong password</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.iHaveGeneratedValidToken()">
+                <span>And I have generated a valid token for that user</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.iRequestUserDetailsWithToken()">
+                <span>When I request the user details using the saved userId and token</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)">
+                <span>Then the response status code should be 200</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theResponseShouldMatchSchema(java.lang.String)">
+                <span>And the response should match the "user-schema.json" schema</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="74"><span class="badge log pass-bg mr-2">Pass</span>Get user details without an authorization token</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()">
+                <span>Given the BookStore API base URL is configured</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.aUserAlreadyExists()">
+                <span>And a user already exists with a unique username and a strong password</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.iHaveGeneratedValidToken()">
+                <span>And I have generated a valid token for that user</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.iRequestUserDetailsWithoutToken()">
+                <span>When I request the user details using the saved userId but no token</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)">
+                <span>Then the response status code should be 401</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="82"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">BookStore - Add Books to User Collection</p>
+            <p class="text-sm">
+              <span>12:00:56 PM</span> / <span>00:00:11:962</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">BookStore - Add Books to User Collection</h5>
+<span class='badge badge-success'>08.23.2026 12:00:56 PM</span>
+<span class='badge badge-danger'>08.23.2026 12:01:08 PM</span>
+<span class='badge badge-default'>00:00:11:962</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=82</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As an authenticated user
+I want to add books to my personal collection
+So that I can track which books I own</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="83"><span class="badge log pass-bg mr-2">Pass</span>Add a valid ISBN to the user's collection</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()">
+                <span>Given the BookStore API base URL is configured</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.aUserAlreadyExists()">
+                <span>And a user already exists with a unique username and a strong password</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.iHaveGeneratedValidToken()">
+                <span>And I have generated a valid token for that user</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.BookStoreStepDefinitions.iAddIsbnToCollection(java.lang.String)">
+                <span>When I add ISBN "isbn1" to the user's collection using the saved token</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)">
+                <span>Then the response status code should be 201</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="91"><span class="badge log pass-bg mr-2">Pass</span>Add an invalid ISBN to the user's collection</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()">
+                <span>Given the BookStore API base URL is configured</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.aUserAlreadyExists()">
+                <span>And a user already exists with a unique username and a strong password</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.iHaveGeneratedValidToken()">
+                <span>And I have generated a valid token for that user</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.BookStoreStepDefinitions.iAddIsbnToCollection(java.lang.String)">
+                <span>When I add ISBN "invalidIsbn" to the user's collection using the saved token</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)">
+                <span>Then the response status code should be 400</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theResponseShouldMatchSchema(java.lang.String)">
+                <span>And the response should match the "error-schema.json" schema</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="100"><span class="badge log pass-bg mr-2">Pass</span>Add an empty list of ISBNs to the user's collection</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()">
+                <span>Given the BookStore API base URL is configured</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.aUserAlreadyExists()">
+                <span>And a user already exists with a unique username and a strong password</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.iHaveGeneratedValidToken()">
+                <span>And I have generated a valid token for that user</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.BookStoreStepDefinitions.iAddEmptyListOfIsbns()">
+                <span>When I add an empty list of ISBNs to the user's collection using the saved token</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)">
+                <span>Then the response status code should be 400</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="108"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">BookStore - Delete All Books</p>
+            <p class="text-sm">
+              <span>12:01:08 PM</span> / <span>00:00:10:847</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">BookStore - Delete All Books</h5>
+<span class='badge badge-success'>08.23.2026 12:01:08 PM</span>
+<span class='badge badge-danger'>08.23.2026 12:01:19 PM</span>
+<span class='badge badge-default'>00:00:10:847</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=108</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As an authenticated user
+I want to clear my entire book collection
+So that I can start fresh</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="109"><span class="badge log pass-bg mr-2">Pass</span>Delete all books from the user's collection using a valid token</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()">
+                <span>Given the BookStore API base URL is configured</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.aUserAlreadyExists()">
+                <span>And a user already exists with a unique username and a strong password</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.iHaveGeneratedValidToken()">
+                <span>And I have generated a valid token for that user</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.BookStoreStepDefinitions.isbnHasBeenAddedToCollection(java.lang.String)">
+                <span>And ISBN "isbn1" has been added to the user's collection</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.BookStoreStepDefinitions.iDeleteAllBooksWithToken()">
+                <span>When I delete all books from the user's collection using the saved token</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)">
+                <span>Then the response status code should be 204</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="118"><span class="badge log pass-bg mr-2">Pass</span>Delete all books without an authorization token</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()">
+                <span>Given the BookStore API base URL is configured</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.aUserAlreadyExists()">
+                <span>And a user already exists with a unique username and a strong password</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.iHaveGeneratedValidToken()">
+                <span>And I have generated a valid token for that user</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.BookStoreStepDefinitions.isbnHasBeenAddedToCollection(java.lang.String)">
+                <span>And ISBN "isbn1" has been added to the user's collection</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.BookStoreStepDefinitions.iDeleteAllBooksWithoutToken()">
+                <span>When I delete all books from the user's collection without a token</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)">
+                <span>Then the response status code should be 401</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="127"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">BookStore - Delete a Book</p>
+            <p class="text-sm">
+              <span>12:01:19 PM</span> / <span>00:00:10:439</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">BookStore - Delete a Book</h5>
+<span class='badge badge-success'>08.23.2026 12:01:19 PM</span>
+<span class='badge badge-danger'>08.23.2026 12:01:30 PM</span>
+<span class='badge badge-default'>00:00:10:439</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=127</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As an authenticated user
+I want to remove a single book from my collection
+So that my collection stays accurate</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="128"><span class="badge log pass-bg mr-2">Pass</span>Delete a book that exists in the user's collection</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()">
+                <span>Given the BookStore API base URL is configured</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.aUserAlreadyExists()">
+                <span>And a user already exists with a unique username and a strong password</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.iHaveGeneratedValidToken()">
+                <span>And I have generated a valid token for that user</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.BookStoreStepDefinitions.isbnHasBeenAddedToCollection(java.lang.String)">
+                <span>And ISBN "isbn1" has been added to the user's collection</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.BookStoreStepDefinitions.iDeleteIsbnFromCollection(java.lang.String)">
+                <span>When I delete ISBN "isbn1" from the user's collection using the saved token</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)">
+                <span>Then the response status code should be 204</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="137"><span class="badge log pass-bg mr-2">Pass</span>Delete a book that is not in the user's collection</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()">
+                <span>Given the BookStore API base URL is configured</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.aUserAlreadyExists()">
+                <span>And a user already exists with a unique username and a strong password</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.iHaveGeneratedValidToken()">
+                <span>And I have generated a valid token for that user</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.BookStoreStepDefinitions.isbnHasBeenAddedToCollection(java.lang.String)">
+                <span>And ISBN "isbn1" has been added to the user's collection</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.BookStoreStepDefinitions.iDeleteIsbnFromCollection(java.lang.String)">
+                <span>When I delete ISBN "invalidIsbn" from the user's collection using the saved token</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)">
+                <span>Then the response status code should be 400</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="146"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">BookStore - Get Book by ISBN</p>
+            <p class="text-sm">
+              <span>12:01:30 PM</span> / <span>00:00:01:817</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">BookStore - Get Book by ISBN</h5>
+<span class='badge badge-success'>08.23.2026 12:01:30 PM</span>
+<span class='badge badge-danger'>08.23.2026 12:01:31 PM</span>
+<span class='badge badge-default'>00:00:01:817</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=146</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As an API consumer
+I want to look up a single book by its ISBN
+So that I can view its details</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="147"><span class="badge log pass-bg mr-2">Pass</span>Get a book using a valid ISBN</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()">
+                <span>Given the BookStore API base URL is configured</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.BookStoreStepDefinitions.iRequestBookWithIsbn(java.lang.String)">
+                <span>When I request the book with ISBN "isbn1"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)">
+                <span>Then the response status code should be 200</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theResponseShouldMatchSchema(java.lang.String)">
+                <span>And the response should match the "book-schema.json" schema</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="154"><span class="badge log pass-bg mr-2">Pass</span>Get a book using an ISBN that does not exist</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()">
+                <span>Given the BookStore API base URL is configured</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.BookStoreStepDefinitions.iRequestBookWithIsbn(java.lang.String)">
+                <span>When I request the book with ISBN "invalidIsbn"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)">
+                <span>Then the response status code should be 400</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="160"><span class="badge log pass-bg mr-2">Pass</span>Get a book using an empty ISBN query parameter</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()">
+                <span>Given the BookStore API base URL is configured</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.BookStoreStepDefinitions.iRequestBookWithEmptyIsbn()">
+                <span>When I request the book with an empty ISBN</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)">
+                <span>Then the response status code should be 400</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="166"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">BookStore - Get All Books</p>
+            <p class="text-sm">
+              <span>12:01:31 PM</span> / <span>00:00:00:615</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">BookStore - Get All Books</h5>
+<span class='badge badge-success'>08.23.2026 12:01:31 PM</span>
+<span class='badge badge-danger'>08.23.2026 12:01:32 PM</span>
+<span class='badge badge-default'>00:00:00:615</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=166</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As an API consumer
+I want to retrieve the full catalog of books
+So that I can browse what is available</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="167"><span class="badge log pass-bg mr-2">Pass</span>Get all books from the catalog</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()">
+                <span>Given the BookStore API base URL is configured</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.BookStoreStepDefinitions.iRequestAllBooksFromCatalog()">
+                <span>When I request all books from the catalog</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)">
+                <span>Then the response status code should be 200</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theResponseShouldMatchSchema(java.lang.String)">
+                <span>And the response should match the "books-response-schema.json" schema</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="174"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">BookStore - Replace a Book</p>
+            <p class="text-sm">
+              <span>12:01:32 PM</span> / <span>00:00:09:707</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">BookStore - Replace a Book</h5>
+<span class='badge badge-success'>08.23.2026 12:01:32 PM</span>
+<span class='badge badge-danger'>08.23.2026 12:01:42 PM</span>
+<span class='badge badge-default'>00:00:09:707</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=174</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As an authenticated user
+I want to swap one book in my collection for another
+So that I can correct or update my reading list</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="175"><span class="badge log pass-bg mr-2">Pass</span>Replace an existing book with a new valid ISBN using a valid token</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()">
+                <span>Given the BookStore API base URL is configured</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.aUserAlreadyExists()">
+                <span>And a user already exists with a unique username and a strong password</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.iHaveGeneratedValidToken()">
+                <span>And I have generated a valid token for that user</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.BookStoreStepDefinitions.isbnHasBeenAddedToCollection(java.lang.String)">
+                <span>And ISBN "isbn1" has been added to the user's collection</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.BookStoreStepDefinitions.iReplaceIsbnWithIsbn(java.lang.String,java.lang.String)">
+                <span>When I replace ISBN "isbn1" with ISBN "isbn2" using the saved token</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)">
+                <span>Then the response status code should be 200</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theResponseShouldMatchSchema(java.lang.String)">
+                <span>And the response should match the "user-schema.json" schema</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="185"><span class="badge log pass-bg mr-2">Pass</span>Replace a book without an authorization token</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theBaseUrlIsConfigured()">
+                <span>Given the BookStore API base URL is configured</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.aUserAlreadyExists()">
+                <span>And a user already exists with a unique username and a strong password</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.iHaveGeneratedValidToken()">
+                <span>And I have generated a valid token for that user</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.BookStoreStepDefinitions.isbnHasBeenAddedToCollection(java.lang.String)">
+                <span>And ISBN "isbn1" has been added to the user's collection</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.BookStoreStepDefinitions.iReplaceIsbnWithIsbnWithoutToken(java.lang.String,java.lang.String)">
+                <span>When I replace ISBN "isbn1" with ISBN "isbn2" without a token</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AccountStepDefinitions.theResponseStatusCodeShouldBe(int)">
+                <span>Then the response status code should be 401</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">13</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>6</span>
+</span>
+<p class="name">@Read</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Read</h4>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:46 PM</td>
+<td>
+<a href="#" class="linked" test-id='64' id='65'>Get an existing user's details using a valid token</a>
+<div class="">
+<span class="badge badge-default">Account - Get User.Get an existing user's details using a valid token</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:52 PM</td>
+<td>
+<a href="#" class="linked" test-id='64' id='74'>Get user details without an authorization token</a>
+<div class="">
+<span class="badge badge-default">Account - Get User.Get user details without an authorization token</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:30 PM</td>
+<td>
+<a href="#" class="linked" test-id='146' id='147'>Get a book using a valid ISBN</a>
+<div class="">
+<span class="badge badge-default">BookStore - Get Book by ISBN.Get a book using a valid ISBN</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:30 PM</td>
+<td>
+<a href="#" class="linked" test-id='146' id='154'>Get a book using an ISBN that does not exist</a>
+<div class="">
+<span class="badge badge-default">BookStore - Get Book by ISBN.Get a book using an ISBN that does not exist</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:31 PM</td>
+<td>
+<a href="#" class="linked" test-id='146' id='160'>Get a book using an empty ISBN query parameter</a>
+<div class="">
+<span class="badge badge-default">BookStore - Get Book by ISBN.Get a book using an empty ISBN query parameter</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:31 PM</td>
+<td>
+<a href="#" class="linked" test-id='166' id='167'>Get all books from the catalog</a>
+<div class="">
+<span class="badge badge-default">BookStore - Get All Books.Get all books from the catalog</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>7</span>
+</span>
+<p class="name">@Chaining</p>
+<p class="duration text-sm">7 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Chaining</h4>
+<span status="pass" class='badge log pass-bg'>7 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:32 PM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='29'>Delete an existing user with a valid token</a>
+<div class="">
+<span class="badge badge-default">Account - Delete User.Delete an existing user with a valid token</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='45' id='46'>Generate a token with valid credentials</a>
+<div class="">
+<span class="badge badge-default">Account - Generate Token.Generate a token with valid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:46 PM</td>
+<td>
+<a href="#" class="linked" test-id='64' id='65'>Get an existing user's details using a valid token</a>
+<div class="">
+<span class="badge badge-default">Account - Get User.Get an existing user's details using a valid token</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:56 PM</td>
+<td>
+<a href="#" class="linked" test-id='82' id='83'>Add a valid ISBN to the user's collection</a>
+<div class="">
+<span class="badge badge-default">BookStore - Add Books to User Collection.Add a valid ISBN to the user's collection</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:08 PM</td>
+<td>
+<a href="#" class="linked" test-id='108' id='109'>Delete all books from the user's collection using a valid token</a>
+<div class="">
+<span class="badge badge-default">BookStore - Delete All Books.Delete all books from the user's collection using a valid token</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:19 PM</td>
+<td>
+<a href="#" class="linked" test-id='127' id='128'>Delete a book that exists in the user's collection</a>
+<div class="">
+<span class="badge badge-default">BookStore - Delete a Book.Delete a book that exists in the user's collection</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:32 PM</td>
+<td>
+<a href="#" class="linked" test-id='174' id='175'>Replace an existing book with a new valid ISBN using a valid token</a>
+<div class="">
+<span class="badge badge-default">BookStore - Replace a Book.Replace an existing book with a new valid ISBN using a valid token</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Edge</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Edge</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:05 PM</td>
+<td>
+<a href="#" class="linked" test-id='82' id='100'>Add an empty list of ISBNs to the user's collection</a>
+<div class="">
+<span class="badge badge-default">BookStore - Add Books to User Collection.Add an empty list of ISBNs to the user's collection</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>6</span>
+</span>
+<p class="name">@Create</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Create</h4>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:24 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Create a user with valid unique credentials</a>
+<div class="">
+<span class="badge badge-default">Account - Create User.Create a user with valid unique credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:30 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='11'>Create a user with a weak password</a>
+<div class="">
+<span class="badge badge-default">Account - Create User.Create a user with a weak password</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:31 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='20'>Create a user with an empty username</a>
+<div class="">
+<span class="badge badge-default">Account - Create User.Create a user with an empty username</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:56 PM</td>
+<td>
+<a href="#" class="linked" test-id='82' id='83'>Add a valid ISBN to the user's collection</a>
+<div class="">
+<span class="badge badge-default">BookStore - Add Books to User Collection.Add a valid ISBN to the user's collection</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:01 PM</td>
+<td>
+<a href="#" class="linked" test-id='82' id='91'>Add an invalid ISBN to the user's collection</a>
+<div class="">
+<span class="badge badge-default">BookStore - Add Books to User Collection.Add an invalid ISBN to the user's collection</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:05 PM</td>
+<td>
+<a href="#" class="linked" test-id='82' id='100'>Add an empty list of ISBNs to the user's collection</a>
+<div class="">
+<span class="badge badge-default">BookStore - Add Books to User Collection.Add an empty list of ISBNs to the user's collection</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>10</span>
+</span>
+<p class="name">@Smoke</p>
+<p class="duration text-sm">10 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Smoke</h4>
+<span status="pass" class='badge log pass-bg'>10 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:24 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Create a user with valid unique credentials</a>
+<div class="">
+<span class="badge badge-default">Account - Create User.Create a user with valid unique credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:32 PM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='29'>Delete an existing user with a valid token</a>
+<div class="">
+<span class="badge badge-default">Account - Delete User.Delete an existing user with a valid token</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='45' id='46'>Generate a token with valid credentials</a>
+<div class="">
+<span class="badge badge-default">Account - Generate Token.Generate a token with valid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:46 PM</td>
+<td>
+<a href="#" class="linked" test-id='64' id='65'>Get an existing user's details using a valid token</a>
+<div class="">
+<span class="badge badge-default">Account - Get User.Get an existing user's details using a valid token</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:56 PM</td>
+<td>
+<a href="#" class="linked" test-id='82' id='83'>Add a valid ISBN to the user's collection</a>
+<div class="">
+<span class="badge badge-default">BookStore - Add Books to User Collection.Add a valid ISBN to the user's collection</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:08 PM</td>
+<td>
+<a href="#" class="linked" test-id='108' id='109'>Delete all books from the user's collection using a valid token</a>
+<div class="">
+<span class="badge badge-default">BookStore - Delete All Books.Delete all books from the user's collection using a valid token</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:19 PM</td>
+<td>
+<a href="#" class="linked" test-id='127' id='128'>Delete a book that exists in the user's collection</a>
+<div class="">
+<span class="badge badge-default">BookStore - Delete a Book.Delete a book that exists in the user's collection</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:30 PM</td>
+<td>
+<a href="#" class="linked" test-id='146' id='147'>Get a book using a valid ISBN</a>
+<div class="">
+<span class="badge badge-default">BookStore - Get Book by ISBN.Get a book using a valid ISBN</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:31 PM</td>
+<td>
+<a href="#" class="linked" test-id='166' id='167'>Get all books from the catalog</a>
+<div class="">
+<span class="badge badge-default">BookStore - Get All Books.Get all books from the catalog</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:32 PM</td>
+<td>
+<a href="#" class="linked" test-id='174' id='175'>Replace an existing book with a new valid ISBN using a valid token</a>
+<div class="">
+<span class="badge badge-default">BookStore - Replace a Book.Replace an existing book with a new valid ISBN using a valid token</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>9</span>
+</span>
+<p class="name">@Account</p>
+<p class="duration text-sm">9 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Account</h4>
+<span status="pass" class='badge log pass-bg'>9 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:24 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Create a user with valid unique credentials</a>
+<div class="">
+<span class="badge badge-default">Account - Create User.Create a user with valid unique credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:30 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='11'>Create a user with a weak password</a>
+<div class="">
+<span class="badge badge-default">Account - Create User.Create a user with a weak password</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:31 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='20'>Create a user with an empty username</a>
+<div class="">
+<span class="badge badge-default">Account - Create User.Create a user with an empty username</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:32 PM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='29'>Delete an existing user with a valid token</a>
+<div class="">
+<span class="badge badge-default">Account - Delete User.Delete an existing user with a valid token</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:37 PM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='37'>Delete a user without an authorization token</a>
+<div class="">
+<span class="badge badge-default">Account - Delete User.Delete a user without an authorization token</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='45' id='46'>Generate a token with valid credentials</a>
+<div class="">
+<span class="badge badge-default">Account - Generate Token.Generate a token with valid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:44 PM</td>
+<td>
+<a href="#" class="linked" test-id='45' id='56'>Generate a token with an incorrect password</a>
+<div class="">
+<span class="badge badge-default">Account - Generate Token.Generate a token with an incorrect password</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:46 PM</td>
+<td>
+<a href="#" class="linked" test-id='64' id='65'>Get an existing user's details using a valid token</a>
+<div class="">
+<span class="badge badge-default">Account - Get User.Get an existing user's details using a valid token</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:52 PM</td>
+<td>
+<a href="#" class="linked" test-id='64' id='74'>Get user details without an authorization token</a>
+<div class="">
+<span class="badge badge-default">Account - Get User.Get user details without an authorization token</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>6</span>
+</span>
+<p class="name">@Delete</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Delete</h4>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:32 PM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='29'>Delete an existing user with a valid token</a>
+<div class="">
+<span class="badge badge-default">Account - Delete User.Delete an existing user with a valid token</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:37 PM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='37'>Delete a user without an authorization token</a>
+<div class="">
+<span class="badge badge-default">Account - Delete User.Delete a user without an authorization token</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:08 PM</td>
+<td>
+<a href="#" class="linked" test-id='108' id='109'>Delete all books from the user's collection using a valid token</a>
+<div class="">
+<span class="badge badge-default">BookStore - Delete All Books.Delete all books from the user's collection using a valid token</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:14 PM</td>
+<td>
+<a href="#" class="linked" test-id='108' id='118'>Delete all books without an authorization token</a>
+<div class="">
+<span class="badge badge-default">BookStore - Delete All Books.Delete all books without an authorization token</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:19 PM</td>
+<td>
+<a href="#" class="linked" test-id='127' id='128'>Delete a book that exists in the user's collection</a>
+<div class="">
+<span class="badge badge-default">BookStore - Delete a Book.Delete a book that exists in the user's collection</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:24 PM</td>
+<td>
+<a href="#" class="linked" test-id='127' id='137'>Delete a book that is not in the user's collection</a>
+<div class="">
+<span class="badge badge-default">BookStore - Delete a Book.Delete a book that is not in the user's collection</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>13</span>
+</span>
+<p class="name">@BookStore</p>
+<p class="duration text-sm">13 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@BookStore</h4>
+<span status="pass" class='badge log pass-bg'>13 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:56 PM</td>
+<td>
+<a href="#" class="linked" test-id='82' id='83'>Add a valid ISBN to the user's collection</a>
+<div class="">
+<span class="badge badge-default">BookStore - Add Books to User Collection.Add a valid ISBN to the user's collection</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:01 PM</td>
+<td>
+<a href="#" class="linked" test-id='82' id='91'>Add an invalid ISBN to the user's collection</a>
+<div class="">
+<span class="badge badge-default">BookStore - Add Books to User Collection.Add an invalid ISBN to the user's collection</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:05 PM</td>
+<td>
+<a href="#" class="linked" test-id='82' id='100'>Add an empty list of ISBNs to the user's collection</a>
+<div class="">
+<span class="badge badge-default">BookStore - Add Books to User Collection.Add an empty list of ISBNs to the user's collection</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:08 PM</td>
+<td>
+<a href="#" class="linked" test-id='108' id='109'>Delete all books from the user's collection using a valid token</a>
+<div class="">
+<span class="badge badge-default">BookStore - Delete All Books.Delete all books from the user's collection using a valid token</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:14 PM</td>
+<td>
+<a href="#" class="linked" test-id='108' id='118'>Delete all books without an authorization token</a>
+<div class="">
+<span class="badge badge-default">BookStore - Delete All Books.Delete all books without an authorization token</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:19 PM</td>
+<td>
+<a href="#" class="linked" test-id='127' id='128'>Delete a book that exists in the user's collection</a>
+<div class="">
+<span class="badge badge-default">BookStore - Delete a Book.Delete a book that exists in the user's collection</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:24 PM</td>
+<td>
+<a href="#" class="linked" test-id='127' id='137'>Delete a book that is not in the user's collection</a>
+<div class="">
+<span class="badge badge-default">BookStore - Delete a Book.Delete a book that is not in the user's collection</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:30 PM</td>
+<td>
+<a href="#" class="linked" test-id='146' id='147'>Get a book using a valid ISBN</a>
+<div class="">
+<span class="badge badge-default">BookStore - Get Book by ISBN.Get a book using a valid ISBN</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:30 PM</td>
+<td>
+<a href="#" class="linked" test-id='146' id='154'>Get a book using an ISBN that does not exist</a>
+<div class="">
+<span class="badge badge-default">BookStore - Get Book by ISBN.Get a book using an ISBN that does not exist</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:31 PM</td>
+<td>
+<a href="#" class="linked" test-id='146' id='160'>Get a book using an empty ISBN query parameter</a>
+<div class="">
+<span class="badge badge-default">BookStore - Get Book by ISBN.Get a book using an empty ISBN query parameter</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:31 PM</td>
+<td>
+<a href="#" class="linked" test-id='166' id='167'>Get all books from the catalog</a>
+<div class="">
+<span class="badge badge-default">BookStore - Get All Books.Get all books from the catalog</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:32 PM</td>
+<td>
+<a href="#" class="linked" test-id='174' id='175'>Replace an existing book with a new valid ISBN using a valid token</a>
+<div class="">
+<span class="badge badge-default">BookStore - Replace a Book.Replace an existing book with a new valid ISBN using a valid token</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:37 PM</td>
+<td>
+<a href="#" class="linked" test-id='174' id='185'>Replace a book without an authorization token</a>
+<div class="">
+<span class="badge badge-default">BookStore - Replace a Book.Replace a book without an authorization token</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@Boundary</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Boundary</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:31 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='20'>Create a user with an empty username</a>
+<div class="">
+<span class="badge badge-default">Account - Create User.Create a user with an empty username</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:31 PM</td>
+<td>
+<a href="#" class="linked" test-id='146' id='160'>Get a book using an empty ISBN query parameter</a>
+<div class="">
+<span class="badge badge-default">BookStore - Get Book by ISBN.Get a book using an empty ISBN query parameter</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@Auth</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Auth</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='45' id='46'>Generate a token with valid credentials</a>
+<div class="">
+<span class="badge badge-default">Account - Generate Token.Generate a token with valid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:44 PM</td>
+<td>
+<a href="#" class="linked" test-id='45' id='56'>Generate a token with an incorrect password</a>
+<div class="">
+<span class="badge badge-default">Account - Generate Token.Generate a token with an incorrect password</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>10</span>
+</span>
+<p class="name">@Positive</p>
+<p class="duration text-sm">10 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Positive</h4>
+<span status="pass" class='badge log pass-bg'>10 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:24 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Create a user with valid unique credentials</a>
+<div class="">
+<span class="badge badge-default">Account - Create User.Create a user with valid unique credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:32 PM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='29'>Delete an existing user with a valid token</a>
+<div class="">
+<span class="badge badge-default">Account - Delete User.Delete an existing user with a valid token</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='45' id='46'>Generate a token with valid credentials</a>
+<div class="">
+<span class="badge badge-default">Account - Generate Token.Generate a token with valid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:46 PM</td>
+<td>
+<a href="#" class="linked" test-id='64' id='65'>Get an existing user's details using a valid token</a>
+<div class="">
+<span class="badge badge-default">Account - Get User.Get an existing user's details using a valid token</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:56 PM</td>
+<td>
+<a href="#" class="linked" test-id='82' id='83'>Add a valid ISBN to the user's collection</a>
+<div class="">
+<span class="badge badge-default">BookStore - Add Books to User Collection.Add a valid ISBN to the user's collection</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:08 PM</td>
+<td>
+<a href="#" class="linked" test-id='108' id='109'>Delete all books from the user's collection using a valid token</a>
+<div class="">
+<span class="badge badge-default">BookStore - Delete All Books.Delete all books from the user's collection using a valid token</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:19 PM</td>
+<td>
+<a href="#" class="linked" test-id='127' id='128'>Delete a book that exists in the user's collection</a>
+<div class="">
+<span class="badge badge-default">BookStore - Delete a Book.Delete a book that exists in the user's collection</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:30 PM</td>
+<td>
+<a href="#" class="linked" test-id='146' id='147'>Get a book using a valid ISBN</a>
+<div class="">
+<span class="badge badge-default">BookStore - Get Book by ISBN.Get a book using a valid ISBN</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:31 PM</td>
+<td>
+<a href="#" class="linked" test-id='166' id='167'>Get all books from the catalog</a>
+<div class="">
+<span class="badge badge-default">BookStore - Get All Books.Get all books from the catalog</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:32 PM</td>
+<td>
+<a href="#" class="linked" test-id='174' id='175'>Replace an existing book with a new valid ISBN using a valid token</a>
+<div class="">
+<span class="badge badge-default">BookStore - Replace a Book.Replace an existing book with a new valid ISBN using a valid token</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>9</span>
+</span>
+<p class="name">@Negative</p>
+<p class="duration text-sm">9 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Negative</h4>
+<span status="pass" class='badge log pass-bg'>9 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:30 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='11'>Create a user with a weak password</a>
+<div class="">
+<span class="badge badge-default">Account - Create User.Create a user with a weak password</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:37 PM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='37'>Delete a user without an authorization token</a>
+<div class="">
+<span class="badge badge-default">Account - Delete User.Delete a user without an authorization token</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:44 PM</td>
+<td>
+<a href="#" class="linked" test-id='45' id='56'>Generate a token with an incorrect password</a>
+<div class="">
+<span class="badge badge-default">Account - Generate Token.Generate a token with an incorrect password</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:00:52 PM</td>
+<td>
+<a href="#" class="linked" test-id='64' id='74'>Get user details without an authorization token</a>
+<div class="">
+<span class="badge badge-default">Account - Get User.Get user details without an authorization token</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:01 PM</td>
+<td>
+<a href="#" class="linked" test-id='82' id='91'>Add an invalid ISBN to the user's collection</a>
+<div class="">
+<span class="badge badge-default">BookStore - Add Books to User Collection.Add an invalid ISBN to the user's collection</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:14 PM</td>
+<td>
+<a href="#" class="linked" test-id='108' id='118'>Delete all books without an authorization token</a>
+<div class="">
+<span class="badge badge-default">BookStore - Delete All Books.Delete all books without an authorization token</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:24 PM</td>
+<td>
+<a href="#" class="linked" test-id='127' id='137'>Delete a book that is not in the user's collection</a>
+<div class="">
+<span class="badge badge-default">BookStore - Delete a Book.Delete a book that is not in the user's collection</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:30 PM</td>
+<td>
+<a href="#" class="linked" test-id='146' id='154'>Get a book using an ISBN that does not exist</a>
+<div class="">
+<span class="badge badge-default">BookStore - Get Book by ISBN.Get a book using an ISBN that does not exist</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:37 PM</td>
+<td>
+<a href="#" class="linked" test-id='174' id='185'>Replace a book without an authorization token</a>
+<div class="">
+<span class="badge badge-default">BookStore - Replace a Book.Replace a book without an authorization token</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@Update</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Update</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:32 PM</td>
+<td>
+<a href="#" class="linked" test-id='174' id='175'>Replace an existing book with a new valid ISBN using a valid token</a>
+<div class="">
+<span class="badge badge-default">BookStore - Replace a Book.Replace an existing book with a new valid ISBN using a valid token</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:37 PM</td>
+<td>
+<a href="#" class="linked" test-id='174' id='185'>Replace a book without an authorization token</a>
+<div class="">
+<span class="badge badge-default">BookStore - Replace a Book.Replace a book without an authorization token</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Aug 23, 2026 12:00:22 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Aug 23, 2026 12:01:42 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>10</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>10</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>22</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>117</b> steps passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Account - Create User":7.832,"Account - Delete User":8.69,"Account - Generate Token":5.967,"Account - Get User":9.778,"BookStore - Add Books to User Collection":11.962,"BookStore - Delete All Books":10.847,"BookStore - Delete a Book":10.439,"BookStore - Get Book by ISBN":1.817,"BookStore - Get All Books":0.615,"BookStore - Replace a Book":9.707
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@Read</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Chaining</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Edge</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Create</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Smoke</td>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Account</td>
+<td>9</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Delete</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@BookStore</td>
+<td>13</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Boundary</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Auth</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Positive</td>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Negative</td>
+<td>9</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Update</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 10,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 22,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 117,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+        <theme>standard</theme>
+        <documentTitle>BookStore API - Automation Report</documentTitle>
+        <reportName>RestAssured BDD Cucumber Extent Report</reportName>
+        <encoding>UTF-8</encoding>
+        <protocol>https</protocol>
+    </configuration>
+</extentreports>
