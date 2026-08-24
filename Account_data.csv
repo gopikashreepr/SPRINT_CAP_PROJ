@@ -1,0 +1,13 @@
+TC_ID,Request_Name,Method,userId,userName,password,ExpectedStatus
+ACC_001,Create User Valid,POST,,"testuser_gops01","Str0ng@Pass123",201
+ACC_002,Create User Weak Password,POST,,"testuser_gops02","123",400
+ACC_003,Create User Empty Username,POST,,"","Str0ng@Pass123",400
+ACC_004,Create User Long Username,POST,,"aVeryLongUsernameThatPushesFieldLimits1234567890","Str0ng@Pass123",201
+ACC_005,Generate Token Valid,POST,,"testuser_gops01","Str0ng@Pass123",200
+ACC_006,Generate Token Wrong Password,POST,,"testuser_gops01","WrongPassword999!",200
+ACC_007,Authorized Valid User,POST,,"testuser_gops01","Str0ng@Pass123",200
+ACC_008,Authorized Nonexistent User,POST,,"does_not_exist_user","SomePassword1!",404
+ACC_009,Get User Valid Token,GET,{{userId}},,,200
+ACC_010,Get User No Token,GET,{{userId}},,,401
+ACC_011,Delete User Valid Token,DELETE,{{userId}},,,204
+ACC_012,Delete User No Token,DELETE,{{userId}},,,401

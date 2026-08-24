@@ -1,0 +1,14 @@
+TC_ID,Request_Name,Method,isbn,newIsbn,userId,ExpectedStatus
+BS_001,Get All Books,GET,,,,200
+BS_002,Add Book Valid ISBN,POST,9781449325862,,{{userId}},201
+BS_003,Add Book Invalid ISBN,POST,0000000000000,,{{userId}},400
+BS_004,Add Book Empty ISBN List,POST,,,{{userId}},400
+BS_005,Get Book Valid ISBN,GET,9781449325862,,,200
+BS_006,Get Book Invalid ISBN,GET,0000000000000,,,400
+BS_007,Get Book Empty ISBN,GET,,,,400
+BS_008,Replace Book Valid Token,PUT,9781449325862,9781449331818,{{userId}},200
+BS_009,Replace Book No Token,PUT,9781449325862,9781449331818,{{userId}},401
+BS_010,Delete Book Valid ISBN,DELETE,9781449325862,,{{userId}},204
+BS_011,Delete Book Invalid ISBN,DELETE,0000000000000,,{{userId}},400
+BS_012,Delete All Books Valid Token,DELETE,,,{{userId}},204
+BS_013,Delete All Books No Token,DELETE,,,{{userId}},401
