@@ -1,0 +1,271 @@
+since you have sometime will you be able to start documenting the process on onboarding and the complete setup along with process and point of contacts pls
+ 
+i need to make onboarding process in Chubb as contractor
+
+
+1. Purpose
+This document provides a standardized onboarding process for contractors joining Chubb projects, ensuring timely access to systems, tools, and project information.
+
+
+2. Scope
+Applicable to all contractors joining Chubb teams through partner organizations
+-----------------------------------------------------------------
+
+An interview will be conducted by one of the resources in Chubb contractor from Capgemini. The questions will be from java, sql and coding and sometime insurance related basic question. 
+
+After giving an successful interview you will be notified by the interviewer to meet POC(Point of Contact) so that they will proceed with your onboarding. POC will request you to meet in-person. After that meeting you will receive a mail from Kachhi Shivam regarding your project allocation to chubb. Sometimes this much be sent earlier.
+
+
+After your allocation to chubb, you will get to know about your team lead and the requirements will be discussed with you by POC. Your KNOWLEDGE TRANSFER(KT) sessions will resume by video or live. You are required to take proper notes and you are required to give Reverse KT.
+
+Your POC/Team Lead will let you know when to come to Chubb Office which is located at Nexity, Sattva Knowledge City. When you are requested to come to Chubb Office you need to create OTP request to come inside the block. You need to contact Vasanth Kumar R(vasanth.r-kumar@capgemini.com) to raise OTP access. You will receive a normal SMS you should enter the block through Sattva Knowledge City Gate 2 only. Should show the OTP at the security and make yourself as Entry and then proceed to Octave-3 16th floor. You can reach to security in the 16th floor and show the OTP which made you entry. You are requested to give your Government Identification proof either in mobile or original. You are requested to give your laptop for noting down your laptop number and make sure you know your POC name and your team name.
+
+Your VDI will be raised by your team lead and you need to follow-up with Suneel Vuba (suneel.vuba@capgemini.com). One of the member from Onshore team in Chubb they will ask for your Last Name expansion.
+
+
+To setup VDI access One member from Chubb they will call and will assist you to login through Webex in browser. You can download Omnissa Horizon Client from Company Portal. Before setup call make sure you got email with temporary password and email id with LAN ID which helps you to login with VDI.
+
+If you got your VDI Ticket number and not able to login to VDI, then you can call chubb helpdesk -> Chubb Business Services India (CBSI)	1800-572-2274  PIN: 1708 and ask for your ticket update.
+
+If you don't find any application which we use like Teams, One Notes, MS Word, You can raise ticket using helpdesk
+
+
+---------------------------------------------------------------
+# Chubb Contractor Onboarding Process
+
+## 1\. Purpose
+
+This document provides a standardized onboarding process for contractors joining Chubb projects, ensuring timely access to systems, tools, project information, and required support contacts.
+
+## 2\. Scope
+
+Applicable to all contractors joining Chubb teams through partner organizations.
+
+---
+
+# 3\. Recruitment and Project Allocation Process
+
+### Interview Process
+
+An interview will be conducted by a Chubb contractor resource from Capgemini. The interview typically focuses on:
+
+- Java
+- SQL
+- Coding/Programming concepts
+- Basic insurance domain knowledge (where applicable)
+
+### Interview Outcome
+
+Upon successful completion of the interview, the interviewer will notify you and connect you with the designated Point of Contact (POC) for onboarding activities.
+
+The POC may request an in\-person meeting to discuss project requirements and onboarding formalities.
+
+Following the discussion, you will receive a project allocation email from **Kachhi Shivam** regarding your assignment to a Chubb project. In some cases, the allocation email may be received before the in\-person discussion.
+
+---
+
+# 4\. Team Introduction and Knowledge Transfer
+
+After project allocation:
+
+- You will be informed about your assigned team and Team Lead.
+- Project requirements and expectations will be explained by your POC or Team Lead.
+- Knowledge Transfer (KT) sessions will be arranged either virtually or in person.
+- Contractors are expected to: 
+    - Attend all KT sessions.
+    - Maintain detailed notes.
+    - Participate actively in discussions.
+    - Provide Reverse KT sessions to demonstrate understanding of the application and processes.
+
+---
+
+# 5\. Chubb Office Visit Process
+
+The Chubb office is located at:
+
+**Chubb Office**
+
+Nexity Building
+
+Sattva Knowledge City
+
+Hyderabad
+
+### Office Visit Authorization
+
+Your POC or Team Lead will inform you when an in\-person office visit is required.
+
+Before visiting the office:
+
+1. An OTP\-based visitor access request must be created.
+2. Contact:
+
+**Vasanth Kumar R**
+
+Email: vasanth.r\-kumar@capgemini.com
+
+to arrange OTP access.
+
+### Entry Process
+
+- You will receive an OTP via SMS.
+- Enter through **Sattva Knowledge City \- Gate 2 only**.
+- Show the OTP to the security personnel at the entrance gate.
+- Ensure your entry is recorded in the visitor register.
+- Proceed to **Octave\-3, 16th Floor**.
+
+### Security Verification
+
+At the Chubb reception/security desk:
+
+- Present the OTP received on your mobile.
+- Provide a valid Government\-issued Identity Proof (physical copy or digital copy).
+- Present your company laptop for asset verification.
+- Be prepared to provide: 
+    - Your POC name
+    - Team name
+    - Project information (if requested)
+
+---
+
+# 6\. VDI (Virtual Desktop Infrastructure) Access Process
+
+## VDI Request Initiation
+
+Your Team Lead will initiate the VDI access request.
+
+For status updates and follow\-up activities, contact:
+
+**Suneel Vuba**
+
+Email: suneel.vuba@capgemini.com
+
+### Additional Information Requirement
+
+A member of the Chubb Onshore Team may contact you to confirm your:
+
+- Last Name expansion
+- Personal details required for account setup
+
+---
+
+# 7\. VDI Setup Process
+
+A Chubb support team member will schedule a setup session and assist you with the VDI login process.
+
+The setup assistance is generally provided through:
+
+- Webex Meeting
+- Browser\-based screen sharing session
+
+### Required Software
+
+Install the following before the setup session:
+
+**Omnissa Horizon Client**
+
+This can be downloaded from:
+
+- Company Portal
+
+### Pre\-requisites
+
+Before attending the setup call, ensure you have received:
+
+- Chubb Email ID
+- LAN ID
+- Temporary Password
+- VDI Login Instructions
+
+These credentials are required to complete the VDI setup successfully.
+
+---
+
+# 8\. VDI Login Issues
+
+If the VDI ticket has been raised and you are unable to access the environment, contact the Chubb Helpdesk.
+
+### Chubb Business Services India (CBSI)
+
+Phone: 1800\-572\-2274
+
+PIN: 1708
+
+When contacting the helpdesk:
+
+- Provide your VDI Ticket Number.
+- Explain the issue encountered during login.
+- Request status updates if ticket processing is pending.
+
+---
+
+# 9\. Application Access and Software Requests
+
+After gaining access to the Chubb environment, verify availability of required applications such as:
+
+- Microsoft Teams
+- OneNote
+- Microsoft Word
+- Outlook
+- Required project tools and applications
+
+If any required software or access is unavailable:
+
+- Raise a helpdesk ticket.
+- Provide application name and access details.
+- Follow up until access has been provisioned.
+
+---
+
+# 10\. Important Contacts
+
+| Contact | Responsibility |
+| --- | --- |
+| POC | Initial onboarding coordination |
+| Team Lead | Project onboarding, KT sessions, VDI requests |
+| Kachhi Shivam | Project allocation communication |
+| Vasanth Kumar R | OTP office access arrangements |
+| Suneel Vuba | VDI follow\-up and coordination |
+| CBSI Helpdesk | Technical support and ticket updates |
+
+---
+
+# 11\. Contractor Onboarding Checklist
+
+✅ Interview completed
+
+✅ Project allocation received
+
+✅ POC discussion completed
+
+✅ Team Lead assigned
+
+✅ KT sessions attended
+
+✅ Reverse KT completed
+
+✅ Office access arranged
+
+✅ VDI request submitted
+
+✅ VDI login completed
+
+✅ Applications verified
+
+✅ Project work started
+
+---
+
+## Document Version
+
+Version: 1.0
+
+## Intended Audience
+
+New Contractors Joining Chubb Projects Through Partner Organizations
+
+## Last Updated
+
+November 2026
+
+
