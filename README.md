@@ -66,5 +66,3 @@ reports/
 - **New schema**: drop a `.json` file into `src/test/resources/testdata/schemas/`
   and reference it from a feature file step: `the response should match the "your-schema.json" schema`.
 
-
-**Document Note:** This SOP has been prepared based on the contractor onboarding information and process details collected so far. Office entry instructions, contact information, helpdesk procedures and role responsibilities should be validated with the respective Capgemini and Chubb representatives before official circulation. Any process changes should be updated in the document to keep the information current.
